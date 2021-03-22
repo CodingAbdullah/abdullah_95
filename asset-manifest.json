@@ -1,23 +1,35 @@
 {
   "files": {
-    "main.css": "/ReactAbdulM95/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/ReactAbdulM95/static/js/main.34e4bf03.chunk.js",
-    "main.js.map": "/ReactAbdulM95/static/js/main.34e4bf03.chunk.js.map",
-    "runtime-main.js": "/ReactAbdulM95/static/js/runtime-main.ffc50332.js",
-    "runtime-main.js.map": "/ReactAbdulM95/static/js/runtime-main.ffc50332.js.map",
-    "static/js/2.f12a646a.chunk.js": "/ReactAbdulM95/static/js/2.f12a646a.chunk.js",
-    "static/js/2.f12a646a.chunk.js.map": "/ReactAbdulM95/static/js/2.f12a646a.chunk.js.map",
-    "static/js/3.69029b05.chunk.js": "/ReactAbdulM95/static/js/3.69029b05.chunk.js",
-    "static/js/3.69029b05.chunk.js.map": "/ReactAbdulM95/static/js/3.69029b05.chunk.js.map",
-    "index.html": "/ReactAbdulM95/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/ReactAbdulM95/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.f12a646a.chunk.js.LICENSE.txt": "/ReactAbdulM95/static/js/2.f12a646a.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/ReactAbdulM95/static/media/logo.6ce24c58.svg"
+    "main.css": "/AbdulM95/static/css/main.3efc95f8.chunk.css",
+    "main.js": "/AbdulM95/static/js/main.7436db39.chunk.js",
+    "main.js.map": "/AbdulM95/static/js/main.7436db39.chunk.js.map",
+    "runtime-main.js": "/AbdulM95/static/js/runtime-main.ac922712.js",
+    "runtime-main.js.map": "/AbdulM95/static/js/runtime-main.ac922712.js.map",
+    "static/js/2.36cbc745.chunk.js": "/AbdulM95/static/js/2.36cbc745.chunk.js",
+    "static/js/2.36cbc745.chunk.js.map": "/AbdulM95/static/js/2.36cbc745.chunk.js.map",
+    "static/js/3.79107828.chunk.js": "/AbdulM95/static/js/3.79107828.chunk.js",
+    "static/js/3.79107828.chunk.js.map": "/AbdulM95/static/js/3.79107828.chunk.js.map",
+    "index.html": "/AbdulM95/index.html",
+    "static/css/main.3efc95f8.chunk.css.map": "/AbdulM95/static/css/main.3efc95f8.chunk.css.map",
+    "static/js/2.36cbc745.chunk.js.LICENSE.txt": "/AbdulM95/static/js/2.36cbc745.chunk.js.LICENSE.txt",
+    "static/media/BigComeback.mp4": "/AbdulM95/static/media/BigComeback.ab9fa945.mp4",
+    "static/media/KnightWin.mp4": "/AbdulM95/static/media/KnightWin.30c6cf0b.mp4",
+    "static/media/abdullahLogo.png": "/AbdulM95/static/media/abdullahLogo.2aaf8251.png",
+    "static/media/bell.jpeg": "/AbdulM95/static/media/bell.725bb728.jpeg",
+    "static/media/celly.png": "/AbdulM95/static/media/celly.390bca03.png",
+    "static/media/cibc.jpg": "/AbdulM95/static/media/cibc.8fa41857.jpg",
+    "static/media/instagram.png": "/AbdulM95/static/media/instagram.75e0546a.png",
+    "static/media/knight.mp4": "/AbdulM95/static/media/knight.6cc25ed7.mp4",
+    "static/media/logo.svg": "/AbdulM95/static/media/logo.103b5fa1.svg",
+    "static/media/mcmaster.jpg": "/AbdulM95/static/media/mcmaster.94f1a941.jpg",
+    "static/media/me.jpg": "/AbdulM95/static/media/me.61b3e40c.jpg",
+    "static/media/programming.png": "/AbdulM95/static/media/programming.c5aa74cb.png",
+    "static/media/websiteResume.pdf": "/AbdulM95/static/media/websiteResume.30ce8188.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.ffc50332.js",
-    "static/js/2.f12a646a.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.34e4bf03.chunk.js"
+    "static/js/runtime-main.ac922712.js",
+    "static/js/2.36cbc745.chunk.js",
+    "static/css/main.3efc95f8.chunk.css",
+    "static/js/main.7436db39.chunk.js"
   ]
 }
