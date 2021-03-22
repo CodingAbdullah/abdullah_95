@@ -32,6 +32,9 @@ class App extends Component {
             <Route path="/lichess" exact component={LichessPage}>
               <LichessPage />
             </Route>
+            <Route path="/AbdulM95" exact component={HomePage}>
+              <HomePage />
+            </Route>
             <Route path="/" exact component={HomePage}>
               <HomePage />
             </Route>
