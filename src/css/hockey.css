@@ -1,0 +1,25 @@
+.hockey-section {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.hockey-heading {
+    font-family: 'Lobster';
+    padding-bottom: 15px;
+    color:grey
+}
+
+.hockey-paragraph {
+    font-family: 'Merriweather';
+    color: royalblue;
+}
+
+.toronto-celly-image {
+    border: 5px solid silver;
+    margin-left: auto;
+    margin-right: auto;
+    height: 18.75rem;
+    width: 25rem;
+    display: block;
+    margin-top: 25px;
+}

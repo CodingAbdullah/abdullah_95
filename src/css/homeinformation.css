@@ -1,0 +1,76 @@
+.body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.row {
+    font-family: 'Saira Stencil One';
+    color: silver;
+    font-weight:900;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.mid-row {
+    padding: 7%;
+    color: black;
+}
+
+.mid-section {
+    margin-bottom: 25px;
+}
+
+.icon-address {
+    color: black;
+    text-decoration: none;
+}
+
+.fas {
+    padding: 2%;
+}
+
+.resume-row {
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 55px;
+    padding-top: 10px;
+}
+
+.resume-row:hover {
+    background-color:lightcyan;
+}
+
+.mid-heading {
+    padding-top: 25px;
+    font-family: 'Lobster';
+    color: grey;
+}
+
+.mid-row-section {
+    padding: 20px;
+}
+
+.mid-row-section:hover {
+    background-color: lightcyan;
+}
+
+.mid-paragraph {
+    padding-top: 10px;
+    font-family: 'Merriweather';
+    color: royalblue;
+}
+
+.border-r {
+    border-right: solid;
+    border-color: silver;
+}
+
+
+@media (max-width: 576px){
+    .border-r {
+        border-right: solid;
+        border-color: white;
+    }
+}

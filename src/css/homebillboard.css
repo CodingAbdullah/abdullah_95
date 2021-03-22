@@ -1,0 +1,51 @@
+.body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#home {
+    padding: 3%;
+    background-color: lightcyan;
+}
+
+.row {
+    font-family: 'Saira Stencil One';
+    color: silver;
+    font-weight:900;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.head-section {
+    padding-top: 50px;
+}
+
+.heading-software {
+    padding-right: 25px;
+    font-size: 60px;
+    display: inline;
+}
+
+.heading-paragraph {
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.personal-photo {
+    height: 300px;
+    width: 300px;
+    border: 5px solid;
+    position: relative;
+}
+
+.picture-section {
+    padding-top: 30px;
+}
+
+@media (max-width: 594px) {
+    .software-engineer-section {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}

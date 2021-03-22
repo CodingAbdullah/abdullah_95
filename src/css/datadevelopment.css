@@ -1,0 +1,23 @@
+.padding-box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.skill-heading {
+    font-family: 'Lobster';
+    padding-bottom: 20px;
+}
+
+.programming-languages-heading {
+    font-family: 'Lobster';
+    padding-top: 20px;
+}
+
+.programming-paragraph {
+    font-family: 'Merriweather';
+    color: royalblue;
+}
+
+.programming-list {
+    font-family: 'Merriweather';
+}

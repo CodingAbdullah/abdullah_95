@@ -1,0 +1,49 @@
+.skill-heading {
+    font-family: 'Lobster';
+    padding-bottom: 20px;
+}
+
+.padding-box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.end-heading {
+    font-family: 'Lobster';
+}
+
+.language-heading {
+    font-family: 'Alfa Slab One';
+}
+
+.front-end {
+    padding-top: 20px;
+}
+
+.end-list {
+    font-family: 'Merriweather';
+}
+
+.front-end-list {
+    font-family: 'Merriweather';
+}
+
+.back-end {
+    padding-top: 20px;
+}
+
+.skill-describe-start {
+    padding-top: 25px;
+}
+
+.skill-description {
+    font-family: 'Merriweather';
+}
+
+h3, h6 {
+    color: grey;
+}
+
+.skill-description, .body-paragraph, li {
+    color: royalblue;
+}

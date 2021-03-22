@@ -1,0 +1,9 @@
+.horizontal {
+    border-top: dotted 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    color: silver;
+    margin-top: 55px;
+    margin-bottom: 40px;
+}

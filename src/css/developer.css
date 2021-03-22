@@ -1,0 +1,21 @@
+.body-paragraph {
+    font-family: 'Merriweather';
+}
+
+.body-paragraph-last {
+    font-family: 'Merriweather';
+    padding-top: 10px;
+}
+
+.body-list {
+    font-family: 'Merriweather';
+}
+
+.developer-section {
+    padding-bottom: 50px;
+}
+
+.developer-title {
+    font-family: 'Lobster';
+    padding-bottom: 25px;
+}

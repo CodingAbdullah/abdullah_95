@@ -1,0 +1,45 @@
+.job-placement-heading {
+    padding-top: 25px;
+}
+
+.about-heading {
+    font-family: "Lobster";
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.cibc-heading {
+    padding-bottom: 10px;
+}
+
+.job-heading {
+    font-family: 'Alfa Slab One';
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.about-paragraph {
+    padding-left: 7%;
+    padding-right: 7%;
+    font-family: 'Merriweather';
+}
+
+.tec-heading {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.image-section {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.cibc {
+    padding-left: 7%;
+    padding-right: 7%;
+    width: 50%;
+    height: 1%;
+}

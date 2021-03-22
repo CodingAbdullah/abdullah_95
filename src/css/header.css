@@ -1,0 +1,40 @@
+#heading {
+    background-color: lightcyan;
+}
+
+.navbar-row {
+    padding-bottom: 2%;
+}
+
+.navbar-brand {
+    color: silver;
+    font-family: 'Alfa Slab One';
+
+}
+
+.link {
+    color: silver;
+    padding-left: 25px;
+    font-family: 'Alfa Slab One';
+    right: 25px;
+}
+
+.link:hover {
+    color: gold;
+    text-decoration: none;
+}
+
+@media (max-width: 850px) {
+    .ml-auto {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: block;
+    }
+
+    .navbar-brand-section {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}

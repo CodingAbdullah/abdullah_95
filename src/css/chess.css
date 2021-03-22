@@ -1,0 +1,54 @@
+.chess-section {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 75px;
+}
+
+.chess-row-last {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+.chess-heading {
+    margin-left: -2px;
+    font-family: 'Lobster';
+    color: grey;
+}
+
+.chess-title {
+    padding-top: 25px;
+    font-family: 'Lobster';
+    text-align: center;
+    color: grey;
+}
+
+.chess-paragraph-first {
+    font-family: 'Merriweather';
+    padding-top: 15px;
+    color: royalblue;
+}
+
+.chess-paragraph {
+    font-family: 'Merriweather';
+    padding-top: 15px;
+    text-align: center;
+    color: royalblue;
+}
+
+.chess-video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.upper-row {
+    padding-top: 30px;
+}
+
+@media (max-width: 991px) {
+    .chess-row-second {
+        padding-top: 50px;
+    }    
+}

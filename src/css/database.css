@@ -1,0 +1,31 @@
+.padding-box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.skill-heading {
+    font-family: 'Lobster';
+    padding-bottom: 20px;
+}
+
+.sql-first {
+    padding-top: 10px;
+}
+
+.sql-heading {
+    padding-top: 20px;
+    font-family: 'Lobster';
+}
+
+.sql-paragraph {
+    font-family: 'Merriweather';
+    color: royalblue;
+}
+
+.body-paragraph-last {
+    color: royalblue;
+}
+
+h5 {
+    color: grey;
+}

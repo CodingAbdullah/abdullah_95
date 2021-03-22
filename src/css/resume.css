@@ -1,0 +1,24 @@
+#resume {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 50px;
+}
+
+.resume-heading {
+    font-family: 'Lobster';
+    padding-bottom: 20px;
+    color: grey
+}
+
+.cover-letter-heading {
+    font-family: 'Lobster';
+}
+
+.resume-paragraph {
+    font-family: 'Merriweather';
+    color: royalblue;
+}
+
+.link-section {
+    padding-bottom: 50px;
+}

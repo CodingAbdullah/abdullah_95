@@ -1,0 +1,18 @@
+.padding-box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.skill-heading {
+    font-family: 'Lobster';
+    padding-bottom: 20px;
+}
+
+.api-paragraph {
+    font-family: 'Merriweather';
+    color: royalblue;
+}
+
+h1 {
+    color: grey;
+}

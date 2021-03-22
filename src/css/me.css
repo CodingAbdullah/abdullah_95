@@ -1,0 +1,40 @@
+.background-heading {
+    font-family: 'Lobster';
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.about-paragraph {
+    padding-left: 7%;
+    padding-right: 7%;
+    font-family: 'Merriweather';
+    color: royalblue;
+}
+
+.education-heading {
+    padding-bottom: 10px;
+}
+
+
+.about-heading {
+    font-family: "Lobster";
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.image {
+    padding-left: 7%;
+    padding-right: 7%;
+    width: 50%;
+    height: 10%;
+}
+
+.image-section {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
