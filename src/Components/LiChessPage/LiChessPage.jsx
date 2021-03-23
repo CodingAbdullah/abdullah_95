@@ -19,16 +19,15 @@ class LichessPage extends Component {
 
             const options = {
                 headers : {
-                    "accepts": "application/json",
-                    "content-type" : 'application/json',
                     "Authorization" : "Bearer zhgRKXzj7fwRlK8Y"  // Concatenate token value
                 }
             }
 
         fetch("https://lichess.org/api/account", options)
-          .then(res => res.json())
+          .then(res => res.text())
           .then(
             (result) => {
+              console.log(result);
               this.setState({
                 isLoaded: true,
                 userData: Array(result)
