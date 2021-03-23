@@ -25,7 +25,7 @@ class LichessPage extends Component {
                 }
             }
 
-        fetch("/api/account", options)
+        fetch("https://lichess.org/api/account", options)
           .then(res => res.json())
           .then(
             (result) => {
