@@ -1,60 +1,74 @@
 import { Component } from 'react';
+import StatusCard from '../Card/StatusCard.jsx';
+import ProfileCard from '../Card/ProfileCard.jsx';
+import GameCard from '../Card/GameCard.jsx';
 
 class LichessPage extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
 
-        this.state = {
-            userData: null,
-            isLoading: false,
-            status: ""
+            this.state = {
+                error: null,
+                isLoaded: false,
+                userData: []
+            };
         }
-    }
 
-    // Working with the Lichess API to export and visualize my personal Chess stats.
-    componentDidMount = () => {
-        this.setState({isLoading: true});
-        
-        // enabling cors and authorization token (hidden for now)
-        const init = {
-            method: 'get',
-            headers : {
-                'accepts': 'application/json',
-                'content-type': 'application/json',
-                'Authorization': 'Bearer iNlJZFToiU3wIAao',
-                'Access-Control-Allow-Origin':  "https://lichess.org"
+        componentDidMount = () => {
+
+            const options = {
+                headers : {
+                    "accepts": "application/json",
+                    "content-type" : 'application/json',
+                    "Authorization" : "Bearer zhgRKXzj7fwRlK8Y"  // Concatenate token value
+                }
+            }
+
+        fetch("/api/account", options)
+          .then(res => res.json())
+          .then(
+            (result) => {
+              this.setState({
+                isLoaded: true,
+                userData: Array(result)
+              });
             },
-            mode: 'cors'
+            // Note: it's important to handle errors here
+            // instead of a catch() block so that we don't swallow
+            // exceptions from actual bugs in components.
+            (error) => {
+              this.setState({
+                isLoaded: true,
+                error
+              });
+            }
+          )
         }
-
-        fetch("/api/account", init)
-        .then(res => res.json())
-        .then(response => {
-            console.log(response);
-            this.setState({userData: response, status: response.online, isLoading: false});
-           // const isOnline = this.state.userData.online;
-            console.log(this.state.status);
-        })
-        .catch(err => {
-            console.log(err);
-        })
-    }
-
+    
     render = () => {
+        const { error, isLoaded, userData } = this.state;
 
-        if (this.state.isLoading){
-            return (
-                <h1>Is Loading...</h1>
-            )
-        }
+        const arrayUserData = Object(userData[0]).username;
+        const online = Object(userData[0]).online;
+        const profile = Object(userData[0]).profile;
+        const data = Object(userData[0]).perfs;
+        const completion = Object(userData[0]).completionRate;
+
+        if (error) {
+          return <div>Error: {error.message}</div>;
+        } 
+        else if (!isLoaded) {
+          return <div>Loading...</div>;
+        } 
         else {
-            return (
-                <div className="lichess">
-                    <h1>Hello World!</h1>
-                    <p>{this.state.status}</p> 
-                </div>
-            )   
+          return (
+            <div className="lichess-section">
+              <StatusCard username={arrayUserData} status={online} />
+              <ProfileCard information={profile} rate={completion} />
+              <GameCard data={data} />
+            </div>
+          );
         }
     }
 }
