@@ -24,10 +24,9 @@ class LichessPage extends Component {
             }
 
         fetch("https://lichess.org/api/account", options)
-          .then(res => res.text())
+          .then(res => res.json())
           .then(
             (result) => {
-              console.log(result);
               this.setState({
                 isLoaded: true,
                 userData: Array(result)
