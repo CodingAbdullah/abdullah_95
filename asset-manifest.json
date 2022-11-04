@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/AbdulM95/static/css/main.0a9f78b0.css",
-    "main.js": "/AbdulM95/static/js/main.b86f1b63.js",
-    "static/js/496.cd638ead.chunk.js": "/AbdulM95/static/js/496.cd638ead.chunk.js",
-    "static/media/knight.mp4": "/AbdulM95/static/media/knight.6cc25ed7c3f53a47559e.mp4",
-    "static/media/KnightWin.mp4": "/AbdulM95/static/media/KnightWin.30c6cf0b2779de94ecf5.mp4",
-    "static/media/BigComeback.mp4": "/AbdulM95/static/media/BigComeback.ab9fa945fd00967a3d2a.mp4",
-    "static/media/mcmaster.jpg": "/AbdulM95/static/media/mcmaster.94f1a9414cc0b5bffd3c.jpg",
-    "static/media/me.jpg": "/AbdulM95/static/media/me.61b3e40c43b17e766d73.jpg",
-    "static/media/celly.png": "/AbdulM95/static/media/celly.390bca03f9a053d87f11.png",
-    "static/media/programming.png": "/AbdulM95/static/media/programming.c5aa74cbb63519e5c790.png",
-    "static/media/websiteResume.pdf": "/AbdulM95/static/media/websiteResume.30ce8188d38ab4a05c9c.pdf",
-    "static/media/bell.jpeg": "/AbdulM95/static/media/bell.725bb728775bc483fa01.jpeg",
-    "static/media/cibc.jpg": "/AbdulM95/static/media/cibc.8fa4185700a8c581ce80.jpg",
-    "static/media/github.png": "/AbdulM95/static/media/github.ae80243d65279ae85042.png",
-    "static/media/abdullahLogo.png": "/AbdulM95/static/media/abdullahLogo.2aaf82512fc24cfdabff.png",
-    "static/media/instagram.png": "/AbdulM95/static/media/instagram.75e0546a6b5abe4c0506.png",
-    "static/media/logo.svg": "/AbdulM95/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
-    "index.html": "/AbdulM95/index.html",
-    "main.0a9f78b0.css.map": "/AbdulM95/static/css/main.0a9f78b0.css.map",
-    "main.b86f1b63.js.map": "/AbdulM95/static/js/main.b86f1b63.js.map",
-    "496.cd638ead.chunk.js.map": "/AbdulM95/static/js/496.cd638ead.chunk.js.map"
+    "main.css": "/futureU-/static/css/main.0a9f78b0.css",
+    "main.js": "/futureU-/static/js/main.479c5829.js",
+    "static/js/496.cd638ead.chunk.js": "/futureU-/static/js/496.cd638ead.chunk.js",
+    "static/media/knight.mp4": "/futureU-/static/media/knight.6cc25ed7c3f53a47559e.mp4",
+    "static/media/KnightWin.mp4": "/futureU-/static/media/KnightWin.30c6cf0b2779de94ecf5.mp4",
+    "static/media/BigComeback.mp4": "/futureU-/static/media/BigComeback.ab9fa945fd00967a3d2a.mp4",
+    "static/media/mcmaster.jpg": "/futureU-/static/media/mcmaster.94f1a9414cc0b5bffd3c.jpg",
+    "static/media/me.jpg": "/futureU-/static/media/me.61b3e40c43b17e766d73.jpg",
+    "static/media/celly.png": "/futureU-/static/media/celly.390bca03f9a053d87f11.png",
+    "static/media/programming.png": "/futureU-/static/media/programming.c5aa74cbb63519e5c790.png",
+    "static/media/websiteResume.pdf": "/futureU-/static/media/websiteResume.30ce8188d38ab4a05c9c.pdf",
+    "static/media/bell.jpeg": "/futureU-/static/media/bell.725bb728775bc483fa01.jpeg",
+    "static/media/cibc.jpg": "/futureU-/static/media/cibc.8fa4185700a8c581ce80.jpg",
+    "static/media/github.png": "/futureU-/static/media/github.ae80243d65279ae85042.png",
+    "static/media/abdullahLogo.png": "/futureU-/static/media/abdullahLogo.2aaf82512fc24cfdabff.png",
+    "static/media/instagram.png": "/futureU-/static/media/instagram.75e0546a6b5abe4c0506.png",
+    "static/media/logo.svg": "/futureU-/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
+    "index.html": "/futureU-/index.html",
+    "main.0a9f78b0.css.map": "/futureU-/static/css/main.0a9f78b0.css.map",
+    "main.479c5829.js.map": "/futureU-/static/js/main.479c5829.js.map",
+    "496.cd638ead.chunk.js.map": "/futureU-/static/js/496.cd638ead.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a9f78b0.css",
-    "static/js/main.b86f1b63.js"
+    "static/js/main.479c5829.js"
   ]
 }
