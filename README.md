@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The website is deployed using **Github Pages** and is located here [Personal Website](https://codingabdullah.github.io/AbdulM95/).
 
 ## Available Scripts
 
