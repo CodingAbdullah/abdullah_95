@@ -1,3 +1,4 @@
+import React from 'react';
 import '../../css/about.css';
 import HorizontalRule from '../HorizontalRule/HorizontalRule.jsx';
 import Me from '../Me/Me.jsx';

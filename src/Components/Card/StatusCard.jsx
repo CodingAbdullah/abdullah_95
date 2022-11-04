@@ -1,3 +1,4 @@
+import React from 'react';
 import '../../css/statuscard.css';
 
 const StatusCard = (props) => {

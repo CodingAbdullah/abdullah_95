@@ -1,3 +1,4 @@
+import React from 'react';
 import HorizontalRule from '../HorizontalRule/HorizontalRule.jsx';
 import '../../css/homeinformation.css';
 

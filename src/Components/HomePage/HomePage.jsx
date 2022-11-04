@@ -1,3 +1,4 @@
+import React from 'react';
 import HomeInformation from '../HomeInformation/HomeInformation.jsx';
 import HomeBillBoard from '../HomeBillBoard/HomeBillBoard.jsx';
 

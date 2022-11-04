@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ProfileCard = (props) => {
     const { bio, country, firstName, lastName, location } = props.information;    
 

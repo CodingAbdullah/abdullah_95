@@ -1,3 +1,4 @@
+import React from 'react';
 import '../../css/jobplacement.css';
 
 const JobPlacement = () => {

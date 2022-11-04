@@ -1,3 +1,4 @@
+import React from 'react';
 import HorizontalRule from '../HorizontalRule/HorizontalRule';
 import Programming from '../Programming/Programming.jsx';
 import Hockey from '../Hockey/Hockey.jsx';

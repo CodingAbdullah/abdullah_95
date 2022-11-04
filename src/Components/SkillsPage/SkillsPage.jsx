@@ -1,3 +1,4 @@
+import React from 'react';
 import HorizontalRule from '../HorizontalRule/HorizontalRule.jsx';
 import Developer from '../Developer/Developer.jsx';
 import Website from '../Website/Website.jsx';

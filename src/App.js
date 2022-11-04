@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './Components/Footer/Footer.jsx';
 import Header from './Components/Header/Header.jsx';
@@ -9,9 +9,7 @@ import SkillsPage from './Components/SkillsPage/SkillsPage.jsx';
 import LichessPage from './Components/LiChessPage/LiChessPage.jsx';
 import ResumePage from './Components/ResumePage/ResumePage.jsx';
 
-class App extends Component {
-
-  render = () => {
+const App = () => {
     return (
       <span>      
         <Router>  
@@ -29,7 +27,6 @@ class App extends Component {
         <Footer />
       </span>
     );
-  }
 }
 
 export default App;

@@ -1,3 +1,4 @@
+import React from 'react';
 import '../../css/developer.css';
 
 const Developer = () => {

@@ -1,3 +1,4 @@
+import React from 'react';
 import '../../css/chess.css';
 
 const Chess = () => {

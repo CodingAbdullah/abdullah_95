@@ -1,3 +1,4 @@
+import React from 'react';
 import '../../css/footer.css';
 import logo from '../../assets/images/logo.svg';
 
@@ -16,7 +17,7 @@ const Footer = () => {
                     </div>
                     <div className="footer-icon row row">
                         <div className="footer-icon-row col-lg-12">
-                            <a href="https://www.instagram.com/kingabdul_95" target="_blank" rel="noreferrer"><img className="footer-social" src={require("../../assets/images/instagram.png")} alt="Missing Asset" /></a>
+                            <a style={{marginLeft: '0.25rem'}} href="https://www.instagram.com/kingabdul_95" target="_blank" rel="noreferrer"><img className="footer-social" src={require("../../assets/images/instagram.png")} alt="Missing Asset" /></a>
                             <a href="https://github.com/CodingAbdullah" target="_blank" rel="noreferrer"><img className="footer-social" src={require("../../assets/images/github.png")} alt="Missing Asset" /></a>
                             <p className="copyright-paragraph">{statement} <img className="react-logo" src={logo} alt="logo" /></p>
                         </div>
