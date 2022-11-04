@@ -1,3 +1,4 @@
+import React from 'react';
 import '../../css/jobplacement.css';
 
 const JobPlacement = () => {
@@ -12,9 +13,8 @@ const JobPlacement = () => {
             <h6 className="tec-heading job-heading">TEC Diversified Solutions INC</h6>
             <p className="about-paragraph">Working at TEC was a unique experience. It was my first four month co-op placement. I used my knowledge of HTML, CSS, and JavaScript to design and develop a website for the startup.</p>
             <p className="about-paragraph">Incorporating UI principles, I had to make sure the design fit what the team was requesting for as well as making it visually appealing. I made use of a popular CSS framework, Bootstrap to complete the job and the website was good to go!</p>
-                
             <div className="image-section">
-                <img className="cibc" src={require("../../assets/images/cibc.jpg").default}  alt="Not Found" />
+                <img className="cibc" src={require("../../assets/images/cibc.jpg")}  alt="Not Found" />
             </div>
         </div>
     )

@@ -1,3 +1,4 @@
+import React from 'react';
 import '../../css/website.css';
 
 const Website = () => {
@@ -8,6 +9,7 @@ const Website = () => {
                 <p className="body-paragraph">Over the years, working as a web developer, allowed me to explore both front-end, back-end, and database technology. I believe developers should be versatile in both areas of development as it allows them to become a complete developer. </p>
                 <p className="body-paragraph">"Full-Stack" developer, as the term goes, is just that. The "stack" referring to the list of technologies that allow for both front-end and back-end development. </p>
                 <p className="body-paragraph">As a Full-Stack developer, I can design and develop dynamic, secure, and user-friendly websites. My stack is the following: </p>
+                <p className="body-paragraph">I am knowledgeable in cloud technology as well as I am AWS certified. Comfortable working with various different niches that AWS has to offer.</p>
                 <h3 className="front-end end-heading">Front-End</h3>
                 <h6 className="language-heading">Languages</h6>
                 <ul className="end-list">
@@ -18,6 +20,7 @@ const Website = () => {
                 </ul>
                 <h6 className="language-heading">Frameworks and Libraries</h6>
                 <ul className="end-list">
+                    <li>AWS Amplify, S3</li>
                     <li>Bootstrap (CSS Framework)</li>
                     <li>React JS</li>
                     <li>jQuery (JavaScript Library)</li>
@@ -30,6 +33,7 @@ const Website = () => {
                     <li>PHP</li>
                     <li>Node JS</li>
                     <li>Apache</li>
+                    <li>AWS EC2/Lambda</li>
                 </ul>
                 <h6 className="language-heading">Frameworks and Libraries</h6>
                 <ul className="end-list">

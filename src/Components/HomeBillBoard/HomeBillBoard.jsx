@@ -1,3 +1,4 @@
+import React from 'react';
 import '../../css/homebillboard.css';
 
 const HomeBillBoard = () => {
@@ -11,7 +12,7 @@ const HomeBillBoard = () => {
                 <p className="heading-paragraph">Life-long Learner. Passionate. Dedicated.</p>
             </div>
             <div className="picture-section col-lg-6 col-md-6">
-                <img className="personal-photo" src={require("../../assets/images/me.jpg").default} alt="Not Found" />
+                <img className="personal-photo" src={require("../../assets/images/me.jpg")} alt="Not Found" />
             </div>
         </div>
     )

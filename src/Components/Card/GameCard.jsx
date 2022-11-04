@@ -1,3 +1,5 @@
+import React from 'react';
+
 const GameCard = (props) => {
 
     const keysList = Object.keys(props.data);

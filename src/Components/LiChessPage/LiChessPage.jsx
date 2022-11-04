@@ -1,73 +1,51 @@
-import { Component } from 'react';
 import StatusCard from '../Card/StatusCard.jsx';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import ProfileCard from '../Card/ProfileCard.jsx';
 import GameCard from '../Card/GameCard.jsx';
 
-class LichessPage extends Component {
+const LichessPage = () => {
+    // Incorporating hooks
+    const [error, updateError] = useState(null);
+    const [isLoaded, updateLoaded] = useState(false);
+    const [userData, updateUserData] = useState([]);
 
-    constructor(props) {
-        super(props);
-
-            this.state = {
-                error: null,
-                isLoaded: false,
-                userData: []
-            };
+    // UseEffect instead of ComponentDidMount() lifecycle method
+    useEffect(() => {
+      const options = {
+        headers : {
+            "Authorization" : "Bearer zhgRKXzj7fwRlK8Y"  // Concatenate token value
         }
+      };
 
-        componentDidMount = () => {
-
-            const options = {
-                headers : {
-                    "Authorization" : "Bearer zhgRKXzj7fwRlK8Y"  // Concatenate token value
-                }
-            }
-
-        fetch("https://lichess.org/api/account", options)
-          .then(res => res.json())
-          .then(
-            (result) => {
-              this.setState({
-                isLoaded: true,
-                userData: Array(result)
-              });
-            },
-            // Note: it's important to handle errors here
-            // instead of a catch() block so that we don't swallow
-            // exceptions from actual bugs in components.
-            (error) => {
-              this.setState({
-                isLoaded: true,
-                error
-              });
-            }
-          )
+      // Using axios API library, handle errors here.
+      axios.get("https://lichess.org/api/account", options)
+      .then((response) => {
+        if (response.status === 200){
+          updateLoaded(true);
+          updateUserData(Array(response.data));
         }
-    
-    render = () => {
-        const { error, isLoaded, userData } = this.state;
+      })
+      .catch((err) => {
+        updateLoaded(true);
+        updateError(err);
+      })
+    }, []);
 
-        const arrayUserData = Object(userData[0]).username;
-        const online = Object(userData[0]).online;
-        const profile = Object(userData[0]).profile;
-        const data = Object(userData[0]).perfs;
-        const completion = Object(userData[0]).completionRate;
-
-        if (error) {
-          return <div>Error: {error.message}</div>;
-        } 
-        else if (!isLoaded) {
-          return <div>Loading...</div>;
-        } 
-        else {
-          return (
-            <div className="lichess-section">
-              <StatusCard username={arrayUserData} status={online} />
-              <ProfileCard information={profile} rate={completion} />
-              <GameCard data={data} />
-            </div>
-          );
-        }
+    if (error) {
+      return <div>Error: {error.message}</div>;
+    } 
+    else if (!isLoaded) {
+      return <div>Loading...</div>;
+    } 
+    else {
+      return (
+        <div className="lichess-section">
+          <StatusCard username={Object(userData[0]).username} status={Object(userData[0]).online} />
+          <ProfileCard information={Object(userData[0]).profile} rate={Object(userData[0]).completionRate} />
+          <GameCard data={Object(userData[0]).perfs} />
+        </div>
+      );
     }
 }
 

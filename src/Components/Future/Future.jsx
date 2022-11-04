@@ -1,4 +1,6 @@
+import React from 'react';
 import '../../css/future.css';
+
 const Future = () => {
 
     return (
@@ -9,7 +11,7 @@ const Future = () => {
             <p className="about-paragraph">As of right now, due to the COVID-19 pandemic, I am working remotely and approaching things day by day. I greatly appreciate you taking the time to read about the "shy kid in class." Much love!</p>
             
             <div className="image-section">
-                <img className="image" src={require("../../assets/images/bell.jpeg").default}  alt="Not Found" />
+                <img className="image" src={require("../../assets/images/bell.jpeg")}  alt="Not Found" />
             </div>
         </div>
     )

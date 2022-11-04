@@ -1,4 +1,6 @@
+import React from 'react';
 import '../../css/footer.css';
+import logo from '../../assets/images/logo.svg';
 
 const Footer = () => {
     
@@ -10,14 +12,14 @@ const Footer = () => {
                 <section id="footer-section">
                     <div className="low-row row">
                         <div className="copyright-row col-lg-12">
-                            <img className="abdullah-logo" src={require("../../assets/images/abdullahLogo.png").default} alt="Missing Asset" />
+                            <img className="abdullah-logo" src={require("../../assets/images/abdullahLogo.png")} alt="Missing Asset" />
                         </div>
                     </div>
                     <div className="footer-icon row row">
                         <div className="footer-icon-row col-lg-12">
-                            <a href="https://www.instagram.com/kingabdul_95"><img className="footer-social" src={require("../../assets/images/instagram.png").default} alt="Missing Asset" /></a>
-                            <a href="https://ca.linkedin.com"><img className="footer-social" src={require("../../assets/images/linkedin.png").default} alt="Missing Asset" /></a>
-                            <p className="copyright-paragraph">{statement} <img className="react-logo" src={require("../../assets/images/logo.svg").default} alt="logo" /></p>
+                            <a style={{marginLeft: '0.25rem'}} href="https://www.instagram.com/kingabdul_95" target="_blank" rel="noreferrer"><img className="footer-social" src={require("../../assets/images/instagram.png")} alt="Missing Asset" /></a>
+                            <a href="https://github.com/CodingAbdullah" target="_blank" rel="noreferrer"><img className="footer-social" src={require("../../assets/images/github.png")} alt="Missing Asset" /></a>
+                            <p className="copyright-paragraph">{statement} <img className="react-logo" src={logo} alt="logo" /></p>
                         </div>
                     </div>
                 </section>
