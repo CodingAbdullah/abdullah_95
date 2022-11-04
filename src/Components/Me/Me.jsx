@@ -11,7 +11,7 @@ const Me = () => {
             <p className="about-paragraph">I chose McMaster because of its unique program structure. The landscape, students, professors and the overall environment foster the learning and growth of students. </p> 
             
             <div className="image-section">
-                <img className="image" src={require("../../assets/images/mcmaster.jpg").default}  alt="Not Found" />
+                <img className="image" src={require("../../assets/images/mcmaster.jpg")}  alt="Not Found" />
             </div>
         </div>
     )
