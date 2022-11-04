@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './Components/Footer/Footer.jsx';
 import Header from './Components/Header/Header.jsx';
 import AboutPage from './Components/AboutPage/AboutPage.jsx';
@@ -16,29 +16,15 @@ class App extends Component {
       <span>      
         <Router>  
           <Header />
-          <Switch>
-            <Route path="/about" exact component={AboutPage}>
-              <AboutPage />
-            </Route>
-            <Route path="/resume" exact component={ResumePage}>
-              <ResumePage />
-            </Route>
-            <Route path="/skills" exact component={SkillsPage}> 
-              <SkillsPage />
-            </Route>
-            <Route path="/leisure" exact component={LeisurePage}>
-              <LeisurePage />
-            </Route>
-            <Route path="/lichess" exact component={LichessPage}>
-              <LichessPage />
-            </Route>
-            <Route path="/AbdulM95" exact component={HomePage}>
-              <HomePage />
-            </Route>
-            <Route path="/" exact component={HomePage}>
-              <HomePage />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route exact path="/about" element={<AboutPage />}></Route>
+            <Route exact path="/resume" element={ <ResumePage />}></Route>
+            <Route exact path="/skills" element={ <SkillsPage /> }></Route>
+            <Route exact path="/leisure" element={ <LeisurePage /> }></Route>
+            <Route exact path="/lichess" element={ <LichessPage /> }></Route>
+            <Route exact path="/AbdulM95" element={ <HomePage /> }></Route>
+            <Route exact path="/" element={ <HomePage /> }></Route>.
+          </Routes>
         </Router>
         <Footer />
       </span>
