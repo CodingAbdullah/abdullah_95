@@ -3,6 +3,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 The website is deployed using **Github Pages** and is located here [Personal Website](https://codingabdullah.github.io/AbdulM95/).
 
+
+## Link to Personal Site
+[CodingAbdullah](https://abdullah.d2ux8seweh4935.amplifyapp.com/).
+
+
 ## Available Scripts
 
 In the project directory, you can run:
