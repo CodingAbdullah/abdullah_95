@@ -5,7 +5,7 @@ The website is deployed using **Github Pages** and is located here [Personal Web
 
 
 ## Link to Personal Site
-[CodingAbdullah](https://abdullah.d2ux8seweh4935.amplifyapp.com/). An official custom domain will be added later.
+[CodingAbdullah](https://kingabdullah.codes/). Custom domain purchased using Namecheap and integrated with AWS Route 53.
 
 
 ## Available Scripts
