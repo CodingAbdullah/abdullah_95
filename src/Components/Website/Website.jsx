@@ -27,7 +27,7 @@ const Website = () => {
                     <li>React (Including React-Router, Hooks, etc.)</li>
                     <li>Node</li>
                     <li>Express</li>
-                    <li>MySQL/MongoDB (Relational/Non-Relational Database)</li>
+                    <li>SQL/MongoDB (Relational/Non-Relational Databases)</li>
                     <li>APIs (REST, Testing APIs using Postman)</li>
                     <li>Bootstrap</li>
                     <li>Redux/Redux Toolkit</li>

@@ -21,3 +21,7 @@
 .programming-list {
     font-family: 'Merriweather';
 }
+
+h1, h5 {
+    color: grey;
+}
