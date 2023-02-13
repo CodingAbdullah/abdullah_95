@@ -5,13 +5,10 @@ const DataDevelopment = () => {
 
     return (
         <div className="data-development-section padding-box">
-            <h1 className="skill-heading data-development">Languages/Data Formats/IDEs</h1>
+            <h1 className="skill-heading data-development">Languages & IDEs</h1>
             <h5 className="programming-languages-heading">Additional Programming Languages</h5>
             <p className="programming-paragraph">Other than web development, which is a big part of my skillset, I am competant in other types of programming languages as well: <ul class="programming-list"><li>Java</li><li>Script Programming with Typescript/Javascript</li><li>Linux Shell Scripting/Command Line</li></ul></p>
             <p className="programming-paragraph">Java was the first language I learned in high school. Intrigued by the idea of programming, I decided to pursue my studies in Software Engineering. I closely followed Java with Python which I believe to be an excellent language to learn, especially for beginners.</p>
-            <h5 className="programming-languages-heading">Data Interchange Formats</h5>
-            <p className="programming-paragraph">Data Interchange Formats allow developers and users alike to pick a model or style in which they store/transfer/manipulate data. Data storages I am familiar are the following: <ul class="programming-list"><li>JSON</li><li>CSV</li></ul></p>
-            <p className="programming-paragraph">I have used JSON to store data in a MONGODB instance and used CSV files to populate tables in a database. Both are effective styles of data storage.</p>
             <h5 className="programming-languages-heading">IDEs - Integrated Development Environment</h5>
             <p className="programming-paragraph">IDEs allow developers to make use of an application which is specifically tailored to design applications of particular language(s). There are several out there and really depends on you, the developer. Below is a list of all the IDE's I am familiar with: </p>
                 <ul className="programming-list">
