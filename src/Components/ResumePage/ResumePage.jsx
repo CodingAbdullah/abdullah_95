@@ -5,12 +5,10 @@ const Resume = () => {
 
     return (
         <section id="resume">
-            <h1 className="resume-heading">Resume/Cover Letter</h1>
-            <p className="resume-paragraph">If you want a light copy of my resume (the fine-grained detailed one is kept with me), please download it below. For security reasons, I have only provided my email address.</p>
-            <p className="resume-paragraph">If you'd like to touch base, please send an email. </p>
-            <p className="resume-paragraph last">Below is the link to download:</p>
+            <h1 className="resume-heading">Resume</h1>
+            <p className="resume-paragraph">Here's a lightweight copy of my resume. Below is the link to download:</p>
             <div className="link-section">
-                <a style={{color: 'green'}}href={require("../../assets/files/websiteResume.pdf")} download>Download File</a>
+                <a style={{ color: 'green' }} href="https://genericbucket95.s3.us-east-2.amazonaws.com/Website+Resume.pdf">Resume</a>
             </div>
         </section>
     )

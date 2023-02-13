@@ -12,9 +12,9 @@ const Header = () => {
                   </div>
                   <div class="col-md-6 links ml-auto">
                     <Link class="link" to="/">Home</Link>
-                    <Link class="link" to="/resume">Resume/CV</Link> 
                     <Link class="link" to="/about">About</Link> 
                     <Link class="link" to="/skills">Skills</Link> 
+                    <Link class="link" to="/resume">Resume</Link> 
                     <Link class="link" to="/leisure">Leisure</Link>
                     <Link class="link" to="/portfolio">Portfolio</Link> 
                   </div>
