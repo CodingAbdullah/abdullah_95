@@ -2,6 +2,11 @@
     background-color: lightcyan;
 }
 
+#heading:hover {
+    color: gold;
+    text-decoration: none;
+}
+
 .navbar-row {
     padding-bottom: 2%;
 }

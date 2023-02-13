@@ -5,21 +5,33 @@ import '../../css/header.css';
 const Header = () => {
 
     return (
-            <section id="heading">
-                <div class="navbar-row row">
-                  <div class="col-md-3 navbar-brand-section">
-                    <h3 class="navbar-heading navbar-brand">AbdulM95</h3>
-                  </div>
-                  <div class="col-md-6 links ml-auto">
-                    <Link class="link" to="/">Home</Link>
-                    <Link class="link" to="/about">About</Link> 
-                    <Link class="link" to="/skills">Skills</Link> 
-                    <Link class="link" to="/resume">Resume</Link> 
-                    <Link class="link" to="/leisure">Leisure</Link>
-                    <Link class="link" to="/portfolio">Portfolio</Link> 
-                  </div>
-                </div>
-            </section>
+      <nav id="heading" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <Link class="navbar-brand" to="/">AbdulM95</Link>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <Link class="nav-link link" aria-current="page" to="/about">About</Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link link" aria-current="page" to="/skills">Skills</Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link link" aria-current="page" to="/resume">Resume</Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link link" aria-current="page" to="/leisure">Leisure</Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link link" aria-current="page" href="/leisure">Portfolio</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     )
 }
 
