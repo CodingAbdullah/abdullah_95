@@ -5,43 +5,73 @@ const Website = () => {
 
     return (
         <div className="website-section padding-box">
-                <h1 className="skill-heading website">Web Development</h1>
-                <p className="body-paragraph">Over the years, working as a web developer, allowed me to explore both front-end, back-end, and database technology. I believe developers should be versatile in both areas of development as it allows them to become a complete developer. </p>
-                <p className="body-paragraph">"Full-Stack" developer, as the term goes, is just that. The "stack" referring to the list of technologies that allow for both front-end and back-end development. </p>
-                <p className="body-paragraph">As a Full-Stack developer, I can design and develop dynamic, secure, and user-friendly websites. My stack is the following: </p>
-                <p className="body-paragraph">I am knowledgeable in cloud technology as well as I am AWS certified. Comfortable working with various different niches that AWS has to offer.</p>
-                <h3 className="front-end end-heading">Front-End</h3>
-                <h6 className="language-heading">Languages</h6>
+                <h1 className="skill-heading website">Web/Software Development</h1>
+                <p className="body-paragraph">Over the years working as a web developer, I was able to explore both front-end, back-end, and database technology. I believe developers should be versatile in both areas of development as it allows them to become a complete developer. </p>
+                <p className="body-paragraph">As a Full-Stack developer, I can design and develop dynamic, secure, and user-friendly websites. </p>
+                <p className="body-paragraph">I am knowledgeable in cloud technology as well as I am <b><i><u>AWS certified. </u></i></b> I love working with the various services AWS has to offer.</p>
+                <p className="body-paragraph">In recent years, I have also dabbled my feet into Web3 development and learned a lot about bridging the gap between traditional web2 paradigms and how, by harnessing the power of blockchain, 
+                                              we can build decentralized solutions:</p>
+
+                <br />
+                <h3 className="end-heading">Languages</h3>
                 <ul className="end-list">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript (ECMASCRIPT 6)</li>
-                    <li>EJS (Embedded JavaScript)</li>
+                    <li>JavaScript (ES7+)</li>
+                    <li>Java</li>
+                    <li>Typescript</li>
+                    <li>Shell Scripting</li>
                 </ul>
-                <h6 className="language-heading">Frameworks and Libraries</h6>
+                <br />
+                <h3 className="end-heading back-end">Full Stack Technologies</h3>
                 <ul className="end-list">
-                    <li>AWS Amplify, S3</li>
-                    <li>Bootstrap (CSS Framework)</li>
-                    <li>React JS</li>
-                    <li>jQuery (JavaScript Library)</li>
-                </ul>
-                <h3 className="end-heading back-end">Back-End</h3>
-                <h6 className="language-heading">Languages</h6>
-                <ul className="end-list">
-                    <li>MySQL (Relational Database)</li>
-                    <li>MongoDB (Non-Relational Database)</li>
-                    <li>PHP</li>
-                    <li>Node JS</li>
-                    <li>Apache</li>
-                    <li>AWS EC2/Lambda</li>
-                </ul>
-                <h6 className="language-heading">Frameworks and Libraries</h6>
-                <ul className="end-list">
-                    <li>Express JS</li>
+                    <li>AWS Certified Cloud Practitioner (Familiar with AWS EC2, S3, Amplify, Route 53, IAM, etc.)</li>
+                    <li>React (Including React-Router, Hooks, etc.)</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>MySQL/MongoDB (Relational/Non-Relational Database)</li>
+                    <li>APIs (REST, Testing APIs using Postman)</li>
+                    <li>Bootstrap</li>
+                    <li>Redux/Redux Toolkit</li>
+                    <li>Angular</li>
+                    <li>Maven</li>
+                    <li>Npm</li>
                 </ul>
 
-                <p className="skill-describe-start skill-description">I originally learned HTML, CSS and followed that with JavaScript, MySQL and PHP. That was my "stack". As I was getting more comfortable with web development, I started to learn JavaScript libraries such as jQuery and frameworks such as React, Node, and Express. </p>
-                <p className="skill-description">I love Bootstrap. As a CSS framework, it helps reduce development time by allowing developers to use ready-made components (forms, buttons, etc).</p>
+                <br />
+                <h3 className="end-heading">Versioning Control/Project Management Tools & IDEs</h3>
+                <ul className="end-list">
+                    <li>Git</li>
+                    <li>Github</li>
+                    <li>Bitbucket</li>
+                    <li>Jira</li>
+                    <li>Confluence</li>
+                    <li>MS Office</li>
+                    <li>Microsoft Visual Studio Code</li>
+                    <li>Notepad++</li>
+                    <li>AWS CLI</li>
+                    <li>Vim Editor</li>
+                    <li>Eclipse</li>
+                    <li>Atom.io</li>
+                    <li>Github.Dev</li>
+                </ul>
+                <br />
+                <h3 className="end-heading">Testing & Deployment</h3>
+                    <ul className="end-list">
+                        <li>Selenium WebDriver</li>
+                        <li>Cucumber Framework</li>
+                        <li>Docker</li>
+                        <li>Jenkins</li>
+                    </ul>  
+                <br />              
+                <h3 className="end-heading">Web3 Development & Crypto</h3>
+                    <ul className="end-list">
+                        <li>Cryptocurrencies</li>
+                        <li>NFTS</li>
+                        <li>Mocha JS</li>
+                        <li>Solidity</li>
+                        <li>Smart Contracts</li>
+                        <li>Remix IDE</li>
+                        <li>Ganache CLI</li>
+                    </ul>                
         </div>
     )
 }
