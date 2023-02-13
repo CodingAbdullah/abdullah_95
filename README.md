@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Link to Personal Site
-[CodingAbdullah](https://kingabdullah.codes/). Custom domain purchased using Namecheap and integrated with AWS Route 53.
+[kingabdullah.codes](https://kingabdullah.codes/). Custom domain purchased using Namecheap and integrated with AWS Route 53.
 
 
 ## Available Scripts
