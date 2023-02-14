@@ -8,7 +8,7 @@ const Website = () => {
                 <h1 className="skill-heading website">Web/Software Development</h1>
                 <p className="body-paragraph">Over the years working as a web developer, I was able to explore both front-end, back-end, and database technology. I believe developers should be versatile in both areas of development as it allows them to become a complete developer. </p>
                 <p className="body-paragraph">As a Full-Stack developer, I can design and develop dynamic, secure, and user-friendly websites. </p>
-                <p className="body-paragraph">I am knowledgeable in cloud technology as well as I am <b><i><u><a href="https://www.credly.com/badges/ea32a77f-e17f-4750-b1b7-b62d3388deb2" target="_blank" rel="noreferrer">AWS certified. </a></u></i></b> I love working with the various services AWS has to offer.</p>
+                <p className="body-paragraph">I am knowledgeable in cloud technology as well as I am <b><i><u><a style={{color: 'green'}} href="https://www.credly.com/badges/ea32a77f-e17f-4750-b1b7-b62d3388deb2" target="_blank" rel="noreferrer">AWS certified. </a></u></i></b> I love working with the various services AWS has to offer.</p>
                 <p className="body-paragraph">In recent years, I have also dabbled my feet into Web3 development and learned a lot about bridging the gap between traditional web2 paradigms and how, by harnessing the power of blockchain, 
                                               we can build decentralized solutions:</p>
 
