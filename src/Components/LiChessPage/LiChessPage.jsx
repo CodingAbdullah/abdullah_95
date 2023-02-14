@@ -1,7 +1,7 @@
-import StatusCard from '../Card/StatusCard.jsx';
+import StatusCard from '../StatusCard/StatusCard.jsx';
+import ProfileCard from '../ProfileCard/ProfileCard.jsx';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import ProfileCard from '../Card/ProfileCard.jsx';
 import GameCard from '../Card/GameCard.jsx';
 
 const LichessPage = () => {
@@ -14,13 +14,14 @@ const LichessPage = () => {
     useEffect(() => {
       const options = {
         headers : {
-            "Authorization" : "Bearer zhgRKXzj7fwRlK8Y"  // Concatenate token value
+            "Authorization" : "Bearer "  + process.env.REACT_APP_LICHESS_API_KEY  // Concatenate token value
         }
       };
 
       // Using axios API library, handle errors here.
       axios.get("https://lichess.org/api/account", options)
       .then((response) => {
+        console.log(response);
         if (response.status === 200){
           updateLoaded(true);
           updateUserData(Array(response.data));
@@ -41,8 +42,8 @@ const LichessPage = () => {
     else {
       return (
         <div className="lichess-section">
-          <StatusCard username={Object(userData[0]).username} status={Object(userData[0]).online} />
-          <ProfileCard information={Object(userData[0]).profile} rate={Object(userData[0]).completionRate} />
+          <StatusCard />
+          <ProfileCard />
           <GameCard data={Object(userData[0]).perfs} />
         </div>
       );

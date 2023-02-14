@@ -1,3 +1,10 @@
 .card-info {
     font-family: 'Alfa Slab One';
 }
+
+.card {
+    margin-left: 'auto';
+    margin-right: 'auto';
+    width: 50%;
+    margin-bottom: 2rem;
+}
