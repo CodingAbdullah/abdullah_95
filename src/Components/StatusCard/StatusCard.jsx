@@ -14,7 +14,7 @@ const StatusCard = () => {
 
     useEffect(() => {
         // Gather status information from updated Lichess API
-        axios.get("https://lichess.org/api/users/status?ids=maplesweet95")
+        axios.get("https://lichess.org/api/users/status?ids=" + process.env.REACT_APP_LICHESS_ACCOUNT)
         .then(response => {
             updateStatusData((prevState) => {
                 return {
