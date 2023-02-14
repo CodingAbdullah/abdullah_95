@@ -54,46 +54,50 @@ const ProfileCard = () => {
 
         return (
             <div className="card" style={{ padding: "1.0rem", borderRadius: "1.5rem" }}>
-                <h4>About Me</h4>
+                <h4>Bio</h4>
                 <div className="card-body">
                     <div className="row">
-                        <h5 className="card-info">Name: { firstName + " " + lastName }</h5>
+                        <h6 className="card-info">Name: { firstName + " " + lastName }</h6>
                     </div>
                     <div className="row">
-                        <h5 className="card-info">Location: { country + " : " + location }</h5>
+                        <h6 className="card-info">Location: { location + ", " + country }</h6>
                     </div>
                     <div className="row">
-                        <h5 className="card-info">Bio: { bio }</h5>
+                        <h6 className="card-info">Bio: { bio }</h6>
                     </div>
                     <div className="row">
-                        <h5 className="card-info">Account Create Date: { new Date( createdAt ).toISOString().split("T")[0] + " " + new Date( createdAt ).toISOString().split("T")[1].split("Z")[0] + " - GMT" }</h5>
+                        <h6 className="card-info">Create Date: { new Date( createdAt ).toISOString().split("T")[0] + " " + new Date( createdAt ).toISOString().split("T")[1].split("Z")[0] + " - GMT" }</h6>
                     </div>
                     <div className="row">
-                        <h5 className="card-info">
-                            Links:
+                        <h6 className="card-info">
+                            Links: 
+                            <br />
                             {
-                                links.split("\r\n").map(link => {
+                                links.replace("\r\n", " ").split(" ").map(link => {
                                     return (
-                                        <span>{" " + link}</span>
+                                        <>
+                                            <a style={{ color: 'green'}} href={ "https://" + link } target="_blank" rel="noreferrer">{link}</a>
+                                            <br />
+                                        </>
                                     )
                                 })
                             }
-                        </h5>
+                        </h6>
                     </div>
                     <div className="row">
-                        <h5 className="card-info">Games Played: { all }</h5>
+                        <h6 className="card-info">Games Played: { all }</h6>
                     </div>
                     <div className="row">
-                        <h5 className="card-info">Wins: { win }</h5>
+                        <h6 className="card-info">Wins: { win }</h6>
                     </div>
                     <div className="row">
-                        <h5 className="card-info">Draws: { draw }</h5>
+                        <h6 className="card-info">Draws: { draw }</h6>
                     </div>
                     <div className="row">
-                        <h5 className="card-info">Losses: { loss }</h5>
+                        <h6 className="card-info">Losses: { loss }</h6>
                     </div>
                     <div className="row">
-                        <h5 className="card-info">Completion Rate: { completionRate }%</h5>
+                        <h6 className="card-info">Completion Rate: { completionRate }%</h6>
                     </div>
                 </div>
             </div>
