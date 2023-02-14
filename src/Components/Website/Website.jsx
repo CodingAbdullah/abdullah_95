@@ -11,7 +11,6 @@ const Website = () => {
                 <p className="body-paragraph">I am knowledgeable in cloud technology as well as I am <b><i><u><a style={{color: 'green'}} href="https://www.credly.com/badges/ea32a77f-e17f-4750-b1b7-b62d3388deb2" target="_blank" rel="noreferrer">AWS certified. </a></u></i></b> I love working with the various services AWS has to offer.</p>
                 <p className="body-paragraph">In recent years, I have also dabbled my feet into Web3 development and learned a lot about bridging the gap between traditional web2 paradigms and how, by harnessing the power of blockchain, 
                                               we can build decentralized solutions:</p>
-
                 <br />
                 <h3 className="end-heading">Languages</h3>
                 <ul className="end-list">
@@ -35,7 +34,6 @@ const Website = () => {
                     <li>Maven</li>
                     <li>Npm</li>
                 </ul>
-
                 <br />
                 <h3 className="end-heading">Versioning Control/Project Management Tools & IDEs</h3>
                 <ul className="end-list">
