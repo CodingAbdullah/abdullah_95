@@ -47,14 +47,18 @@ const StatusCard = () => {
             <div className="card" style={{ borderRadius: "1.5rem", paddingBottom: '2rem' }}>
                 <div className="card-body">
                     <div className="row">
-                        <h6 className="card-info">Username: { statusData.information.id }</h6>
+                        <h5 className="card-info">
+                            <span className="card-attribute-title">Username: </span> 
+                            { statusData.information.id }
+                        </h5>
                     </div>
                     <div className="row">
-                        <h6 className="card-info">Status: 
+                        <h5 className="card-info">
+                            <span className="card-attribute-title">Status: </span>
                             <span style={{ color: statusData.information.online === true ? 'green' : 'red' }}>
                                 { statusData.information.online === true ? " Online" : " Offline" }
                             </span>
-                        </h6>
+                        </h5>
                     </div>
                 </div>
             </div>

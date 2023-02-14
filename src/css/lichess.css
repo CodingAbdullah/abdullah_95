@@ -6,6 +6,12 @@
     padding: 3rem;
 }
 
+.card-attribute-title {
+    font-family: 'Lobster';
+    color: black;
+    font-size: 25px;
+}
+
 .status-title {
     font-family: 'Lobster';
     padding-top: 10px;

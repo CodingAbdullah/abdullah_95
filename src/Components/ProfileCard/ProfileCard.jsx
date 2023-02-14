@@ -53,24 +53,37 @@ const ProfileCard = () => {
         let { createdAt } = profileData.information;
         let { all, win, draw, loss } = profileData.information.count;
 
+        // Format titles and add the values into the following JSX
         return (
             <div className="card" style={{ borderRadius: "1.5rem", paddingBottom: '2rem' }}>
                 <div className="card-body">
                     <div className="row">
-                        <h6 className="card-info">Name: { firstName + " " + lastName }</h6>
+                        <h5 className="card-info">
+                            <span className="card-attribute-title">Name: </span>
+                            { firstName + " " + lastName }
+                        </h5>
                     </div>
                     <div className="row">
-                        <h6 className="card-info">Location: { location + ", " + country }</h6>
+                        <h5 className="card-info">
+                            <span className="card-attribute-title">Location: </span>
+                            { location + ", " + country }
+                        </h5>
                     </div>
                     <div className="row">
-                        <h6 className="card-info">Bio: { bio }</h6>
+                        <h5 className="card-info">
+                            <span className="card-attribute-title">Bio: </span>
+                            { bio }
+                        </h5>
                     </div>
                     <div className="row">
-                        <h6 className="card-info">Create Date: { new Date( createdAt ).toISOString().split("T")[0] + " " + new Date( createdAt ).toISOString().split("T")[1].split("Z")[0] + " - GMT" }</h6>
+                        <h5 className="card-info">
+                            <span className="card-attribute-title">Create Date: </span> 
+                            { new Date( createdAt ).toISOString().split("T")[0] + " " + new Date( createdAt ).toISOString().split("T")[1].split("Z")[0] + " - GMT" }
+                        </h5>
                     </div>
                     <div className="row">
-                        <h6 className="card-info">
-                            Links: 
+                        <h5 className="card-info">
+                            <span className="card-attribute-title">Links: </span>
                             <br />
                             {
                                 links.replace("\r\n", " ").split(" ").map(link => {
@@ -82,19 +95,31 @@ const ProfileCard = () => {
                                     )
                                 })
                             }
-                        </h6>
+                        </h5>
                     </div>
                     <div className="row">
-                        <h6 className="card-info">Games Played: { all }</h6>
+                        <h5 className="card-info">
+                            <span className="card-attribute-title">Games Played: </span>
+                            { all }
+                        </h5>
                     </div>
                     <div className="row">
-                        <h6 className="card-info">Wins: { win }</h6>
+                        <h5 className="card-info">
+                            <span className="card-attribute-title">Wins: </span>
+                            { win }
+                        </h5>
                     </div>
                     <div className="row">
-                        <h6 className="card-info">Draws: { draw }</h6>
+                        <h5 className="card-info">
+                            <span className="card-attribute-title">Draws: </span> 
+                            { draw }
+                        </h5>
                     </div>
                     <div className="row">
-                        <h6 className="card-info">Losses: { loss }</h6>
+                        <h5 className="card-info">
+                            <span className="card-attribute-title">Losses: </span>
+                            { loss }
+                        </h5>
                     </div>
                 </div>
             </div>

@@ -7,19 +7,21 @@ import '../../css/lichess.css';
 
 const LichessPage = () => {
 
+  // Adding in horizontal rules and titles for display
   return (
     <div className="lichess-section">
-        <h1 className="lichess-title">Lichess</h1>
-        <h4 className="status-title">Profile</h4>
+        <h1 className="lichess-title">Lichess Profile</h1>
+        <h2 className="status-title">Account</h2>
         <StatusCard />
         <HorizontalRule />
-        <h4 className="bio-title">Bio</h4>
+        <h2 className="bio-title">Bio</h2>
         <ProfileCard />
         <HorizontalRule />
-        <h4 className="bio-title">Games</h4>
+        <h2 className="bio-title">Games</h2>
         <GameCard />
         <HorizontalRule />
-      </div>
+    </div>
   );
 }
+
 export default LichessPage;

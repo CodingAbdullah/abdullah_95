@@ -70,17 +70,27 @@ const GameCard = () => {
                             <div className='card' style={{ marginBottom: '2rem', borderRadius: "1.5rem", paddingBottom: '2rem' }}>
                                 <div className="card-body">
                                     <div className="row">
-                                        <h5 className="card-info"> Type: { gameType.name.charAt(0).toUpperCase() + gameType.name.substring(1).toLowerCase() }</h5>
+                                        <h5 className="card-info">
+                                            <span className="card-attribute-title">Type: </span> 
+                                            { gameType.name.charAt(0).toUpperCase() + gameType.name.substring(1).toLowerCase() }
+                                        </h5>
                                     </div>
                                     <div className="row">
-                                        <h5 className="card-info">Games: { gameType.games }</h5>
+                                        <h5 className="card-info">
+                                            <span className="card-attribute-title">Games: </span> 
+                                                { gameType.games }
+                                        </h5>
                                     </div>
                                     <div className="row">
-                                        <h5 className="card-info">Rating: { gameType.rating }</h5>
+                                        <h5 className="card-info">
+                                            <span className="card-attribute-title">Rating: </span> 
+                                            { gameType.rating }
+                                        </h5>
                                     </div>
                                     <div className="row">
-                                        <h5 className="card-info">Progression: 
-                                            <span className="card-info" style={{ color: gameType.prog < 0 ? "red" : "green" }}>{ " " + gameType.prog }</span>
+                                        <h5 className="card-info">
+                                            <span className="card-attribute-title">Progression: </span>
+                                            <span className="card-info" style={{ color: gameType.prog < 0 ? "red" : "green" }}> { " " + gameType.prog >= 0 ? ( " +" + gameType.prog ): ( " " + gameType.prog ) } </span>
                                         </h5>
                                     </div>
                                 </div>
