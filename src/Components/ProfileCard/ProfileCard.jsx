@@ -23,6 +23,7 @@ const ProfileCard = () => {
         // Make the API call using the authenticator token
         axios.get("https://lichess.org/api/account", options)
         .then(response => {
+            console.log(response);
             updateProfileData((prevState) => {
                 return {
                     ...prevState,
@@ -49,7 +50,7 @@ const ProfileCard = () => {
     else {
         // Object destructure for display, date formatting, etc
         let { firstName, lastName, country, location, bio, links } = profileData.information.profile;
-        let { completionRate, createdAt } = profileData.information;
+        let { createdAt } = profileData.information;
         let { all, win, draw, loss } = profileData.information.count;
 
         return (
@@ -76,7 +77,7 @@ const ProfileCard = () => {
                                 links.replace("\r\n", " ").split(" ").map(link => {
                                     return (
                                         <>
-                                            <a style={{ color: 'green'}} href={ "https://" + link } target="_blank" rel="noreferrer">{link}</a>
+                                            <a style={{ color: 'green'}} href={ "https://" + link } target="_blank" rel="noreferrer">{ link }</a>
                                             <br />
                                         </>
                                     )
@@ -95,9 +96,6 @@ const ProfileCard = () => {
                     </div>
                     <div className="row">
                         <h6 className="card-info">Losses: { loss }</h6>
-                    </div>
-                    <div className="row">
-                        <h6 className="card-info">Completion Rate: { completionRate }%</h6>
                     </div>
                 </div>
             </div>
