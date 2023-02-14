@@ -44,8 +44,7 @@ const StatusCard = () => {
     // Once the status data uploads, populate the JSX with information
     else {
         return (
-            <div className="card" style={{ padding: "1.0rem", borderRadius: "1.5rem" }}>
-                <h4>Profile</h4>
+            <div className="card" style={{ borderRadius: "1.5rem", paddingBottom: '2rem' }}>
                 <div className="card-body">
                     <div className="row">
                         <h6 className="card-info">Username: { statusData.information.id }</h6>

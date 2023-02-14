@@ -54,8 +54,7 @@ const ProfileCard = () => {
         let { all, win, draw, loss } = profileData.information.count;
 
         return (
-            <div className="card" style={{ padding: "1.0rem", borderRadius: "1.5rem" }}>
-                <h4>Bio</h4>
+            <div className="card" style={{ borderRadius: "1.5rem", paddingBottom: '2rem' }}>
                 <div className="card-body">
                     <div className="row">
                         <h6 className="card-info">Name: { firstName + " " + lastName }</h6>
@@ -77,7 +76,7 @@ const ProfileCard = () => {
                                 links.replace("\r\n", " ").split(" ").map(link => {
                                     return (
                                         <>
-                                            <a style={{ color: 'green'}} href={ "https://" + link } target="_blank" rel="noreferrer">{ link }</a>
+                                            <a style={{ color: 'green' }} href={ "https://" + link } target="_blank" rel="noreferrer">{ link }</a>
                                             <br />
                                         </>
                                     )

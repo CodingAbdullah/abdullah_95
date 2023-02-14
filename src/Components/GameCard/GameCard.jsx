@@ -63,30 +63,31 @@ const GameCard = () => {
         }
 
         return (
-            <div className="card" style={{ padding: "1.0rem", borderRadius: "1.5rem" }}>
-                <h4>Game Records</h4>
+            <div className="game-record-section">
                 {  
                     gameTypeList.map(gameType => {
                         return (
-                            <div className="card-body">
-                                <div className="row">
-                                    <h5 className="card-info"> Type: { gameType.name.charAt(0).toUpperCase() + gameType.name.substring(1).toLowerCase() }</h5>
-                                </div>
-                                <div className="row">
-                                    <h5 className="card-info">Games: { gameType.games }</h5>
-                                </div>
-                                <div className="row">
-                                    <h5 className="card-info">Rating: { gameType.rating }</h5>
-                                </div>
-                                <div className="row">
-                                    <h5>Progression: 
-                                        <span className="card-info" style={{ color: gameType.prog < 0 ? "red" : "green" }}>{ " " + gameType.prog }</span>
-                                    </h5>
+                            <div className='card' style={{ marginBottom: '2rem', borderRadius: "1.5rem", paddingBottom: '2rem' }}>
+                                <div className="card-body">
+                                    <div className="row">
+                                        <h5 className="card-info"> Type: { gameType.name.charAt(0).toUpperCase() + gameType.name.substring(1).toLowerCase() }</h5>
+                                    </div>
+                                    <div className="row">
+                                        <h5 className="card-info">Games: { gameType.games }</h5>
+                                    </div>
+                                    <div className="row">
+                                        <h5 className="card-info">Rating: { gameType.rating }</h5>
+                                    </div>
+                                    <div className="row">
+                                        <h5 className="card-info">Progression: 
+                                            <span className="card-info" style={{ color: gameType.prog < 0 ? "red" : "green" }}>{ " " + gameType.prog }</span>
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         );
                     }
-                )}
+                )}  
             </div>
         )
     }
