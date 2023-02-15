@@ -3,7 +3,6 @@ import HorizontalRule from '../HorizontalRule/HorizontalRule.jsx';
 import Developer from '../Developer/Developer.jsx';
 import Website from '../Website/Website.jsx';
 import DataDevelopment from '../DataDevelopment/DataDevelopment.jsx'
-
 import '../../css/skills.css';
 
 const SkillsPage = () => {

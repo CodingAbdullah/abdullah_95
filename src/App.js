@@ -9,6 +9,7 @@ import SkillsPage from './Components/SkillsPage/SkillsPage.jsx';
 import LichessPage from './Components/LiChessPage/LiChessPage.jsx';
 import ResumePage from './Components/ResumePage/ResumePage.jsx';
 import PortfolioPage from './Components/PortfolioPage/portfoliopage.jsx';
+import Page404 from './Components/Page404/page404.jsx';
 
 const App = () => {
     return (
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="/lichess" element={ <LichessPage /> }></Route>
             <Route path="/portfolio" element={<PortfolioPage />}></Route>
             <Route exact path="/" element={ <HomePage /> }></Route>
+            <Route exact path="*" element={<Page404 />}></Route>
           </Routes>
         <Footer />
       </>

@@ -14,8 +14,6 @@ const PortfolioPage = () => {
                 <HorizontalRule />
         </div>
     )
-    // More to be added later...
 }
-
 
 export default PortfolioPage;
