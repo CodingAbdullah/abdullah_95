@@ -12,6 +12,12 @@ Link to my personal website: [kingabdullah.codes](https://kingabdullah.codes).
 
 <br />
 
+## Features
+
+Some things included in this site are my resume, skills, portfolio link, leisure, and soon to be added, **Github Statistics**
+
+<br />
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
