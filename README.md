@@ -14,9 +14,7 @@ Link to my personal website: [kingabdullah.codes](https://kingabdullah.codes).
 
 ## Features
 
-Some things included in this site are my resume, skills, portfolio link, leisure, and soon to be added, **Github Statistics**
-
-<br />
+Some things included in this site are the resume, skills, portfolio link, leisure, and soon to be added, **Github Statistics.** Github Statistics will be added using Github's API.
 
 ## Learn More
 
