@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Footer from './Components/Footer/Footer.jsx';
 import Header from './Components/Header/Header.jsx';
 import AboutPage from './Components/AboutPage/AboutPage.jsx';
@@ -15,16 +15,16 @@ const App = () => {
     return (
       <>
         <Header />
-          <Routes>
-            <Route path="/about" element={<AboutPage />}></Route>
-            <Route path="/resume" element={ <ResumePage />}></Route>
-            <Route path="/skills" element={ <SkillsPage /> }></Route>
-            <Route path="/leisure" element={ <LeisurePage /> }></Route>
-            <Route path="/lichess" element={ <LichessPage /> }></Route>
-            <Route path="/portfolio" element={<PortfolioPage />}></Route>
-            <Route exact path="/" element={ <HomePage /> }></Route>
-            <Route exact path="*" element={<Page404 />}></Route>
-          </Routes>
+            <Routes>
+              <Route exact path="/about" element={<AboutPage />}></Route>
+              <Route exact path="/resume" element={ <ResumePage />}></Route>
+              <Route exact path="/skills" element={ <SkillsPage /> }></Route>
+              <Route exact path="/leisure" element={ <LeisurePage /> }></Route>
+              <Route exact path="/lichess" element={ <LichessPage /> }></Route>
+              <Route exact path="/portfolio" element={<PortfolioPage />}></Route>
+              <Route exact path="/" element={ <HomePage /> }></Route>
+              <Route exact path="*" element={<Page404 />}></Route>
+            </Routes>
         <Footer />
       </>
     );
