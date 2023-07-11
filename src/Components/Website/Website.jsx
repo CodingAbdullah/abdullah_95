@@ -11,6 +11,8 @@ const Website = () => {
                 <p className="body-paragraph">I am knowledgeable in cloud technology as well as I am <b><i><u><a style={{color: 'green'}} href="https://www.credly.com/badges/ea32a77f-e17f-4750-b1b7-b62d3388deb2" target="_blank" rel="noreferrer">AWS certified. </a></u></i></b> I love working with the various services AWS has to offer. 
                 I have also explored other cloud platforms as well. Recently, I completed the Azure Administrator exam <b><i><u><a style={{color: 'green'}} href="https://www.credly.com/badges/6b4fb749-f168-448f-a3f3-16104c630493" target="_blank" rel="noreferrer">Microsoft Azure certified. </a></u></i></b></p>
                 <p className="body-paragraph">In recent years, I have also dabbled my feet into Web3 development and learned a lot about bridging the gap between traditional Web2 paradigms and how, by harnessing the power of the blockchain, 
+                <p className="body-paragraph">I am knowledgeable in cloud technology as well as I am <b><i><u><a style={{color: 'green'}} href="https://www.credly.com/badges/ea32a77f-e17f-4750-b1b7-b62d3388deb2" target="_blank" rel="noreferrer">AWS certified. </a></u></i></b> I love working with the various services AWS has to offer.</p>
+                <p className="body-paragraph">In recent years, I have also dabbled my feet into Web3 development and learned a lot about bridging the gap between traditional web2 paradigms and how, by harnessing the power of blockchain, 
                                               we can build decentralized solutions:</p>
                 <br />
                 <h3 className="end-heading">Languages</h3>
