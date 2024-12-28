@@ -1,12 +1,12 @@
 # Personal Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped using [Create Next App](https://nextjs.org/learn-pages-router/basics/create-nextjs-app/setup).
 
 <br />
 
 ## Description
 
-A personal website dedicated to me. All the source code for creating it is located here (under the AbdulM95 repository) and deployed to the web. 
+A personal website dedicated to me. All the source code for creating it is located here (under the <code>abdullah_95</code> repository) and deployed to the web. 
 
 Link to my personal website: [kingabdullah.codes](https://kingabdullah.codes).
 
@@ -14,10 +14,12 @@ Link to my personal website: [kingabdullah.codes](https://kingabdullah.codes).
 
 ## Features
 
-Some things included in this site are the resume, skills, portfolio link, leisure, and soon to be added, **Github Statistics.** Github Statistics will be added using Github's API.
+Some things included on this site are my resume, skills, project portfolio, etc.
+
+<br />
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more in the [Create Next App Documentation](https://nextjs.org/learn-pages-router/basics/create-nextjs-app/setup).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn Next.js, check out the [Next Documentation](https://nextjs.org/).
