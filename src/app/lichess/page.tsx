@@ -6,7 +6,7 @@ import { LichessData } from '../../types/LichessData';
 // Custom Lichess page component
 const LichessPage = () => {
   const [lichessData, setLichessData] = useState<LichessData | null>(null);
-  const [isError, setIsError] = useState(null);
+  const [isError, setIsError] = useState(false);
 
   useEffect(() => {
     const fetchLichessData = async () => {
@@ -19,7 +19,7 @@ const LichessPage = () => {
         setLichessData(data);
       } 
       catch (error) {
-        setIsError(error.message);
+        setIsError(true);
       }
     };
 

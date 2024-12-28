@@ -46,7 +46,7 @@ export default function LeisurePage() {
                 You know what they say, you are a true Canadian if you love hockey! Well, I am a big fan of it and love cheering on the beloved home town, Toronto Maple Leafs! Never easy being a Leafs fan, but with a young promising core I believe the Leafs will win the Stanley Cup, God willing.
             </p>
             <p className="text-lg text-muted-foreground">
-                The night when the Leafs' captain raises the cup and with chants of "No more '67!", that will be an iconic moment to remember! :)
+                The night when the Maple Leaf captain raises the cup and with chants of No more 1967!, that will be an iconic moment to remember! :)
             </p>
             <div className="flex justify-center">
               <Image
@@ -73,9 +73,9 @@ export default function LeisurePage() {
             <br />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <h5 className="text-xl font-semibold text-primary">Knight's Signature: Smothered Mate</h5>
+                <h5 className="text-xl font-semibold text-primary">Knight Signature: Smothered Mate</h5>
                 <p className="text-lg text-muted-foreground">
-                  A rare checkmating sequence. A sneaky double check and a queen sac "smothers" the king and a lone knight wins the game!
+                  A rare checkmating sequence. A sneaky double check and a queen sac smothers the king and a lone knight wins the game!
                 </p>
                 <br />
                 <video className="rounded-lg shadow-lg" width="370" height="290" controls>
@@ -85,7 +85,7 @@ export default function LeisurePage() {
               <div>
                 <h5 className="text-xl font-semibold text-primary">A Queen Sac for the Win</h5>
                 <p className="text-lg text-muted-foreground">
-                  Often times, it matters how well your pieces are positioned, not your lead in material. An "opera" mate is hidden, can you spot it?
+                  Often times, it matters how well your pieces are positioned, not your lead in material. An opera mate is hidden, can you spot it?
                 </p>
                 <br />
                 <video className="rounded-lg shadow-lg" width="370" height="290" controls>

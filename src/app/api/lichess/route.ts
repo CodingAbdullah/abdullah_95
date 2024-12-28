@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Custom backend API route for fetching account and status data
 // GET /api/lichess
-export async function GET(req: NextRequest) {
+export async function GET() {
   try {
     // Fetch account information
     const accountResponse = await axios.get('https://lichess.org/api/account', {
@@ -25,7 +25,7 @@ export async function GET(req: NextRequest) {
   } 
   catch (error) {
     return NextResponse.json({ 
-      error: 'Failed to fetch data from Lichess' }, 
+      error }, 
       { 
         status: 500 
       });

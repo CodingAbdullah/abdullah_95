@@ -1,4 +1,4 @@
-import { Newspaper, Github, Instagram, Linkedin, Mail, Twitter } from 'lucide-react'
+import { Newspaper, Github, Instagram, Linkedin, Twitter } from 'lucide-react'
 import Link from 'next/link'
 
 // Custom Footer component added
