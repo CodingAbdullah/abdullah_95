@@ -19,7 +19,9 @@ const LichessPage = () => {
         setLichessData(data);
       } 
       catch (error) {
-        setIsError(true);
+        if (error) {
+            setIsError(true);
+        }
       }
     };
 
