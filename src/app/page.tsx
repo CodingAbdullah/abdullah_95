@@ -57,7 +57,7 @@ export default function Home() {
               </CardContent>
             </Card>
           </Link>
-          <Link href="/resume" passHref>
+          <Link href="https://genericbucket95.s3.us-east-2.amazonaws.com/Website+Resume.pdf" passHref>
             <Card className="bg-card/80 backdrop-blur-sm border-primary/20">
               <CardContent className="p-6 space-y-2">
                 <FileText className="h-12 w-12 mb-4 text-primary" />

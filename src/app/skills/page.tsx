@@ -33,7 +33,7 @@ export default function SkillsPage() {
                 I am <b><i><u><Link href="https://www.credly.com/badges/ea32a77f-e17f-4750-b1b7-b62d3388deb2" target="_blank" rel="noreferrer" className="text-green-500">AWS certified.</Link></u></i></b> I love working with the various services AWS has to offer. With the advent of AI, I plan on upskilling in the field of AI x Cloud. Recently, I completed the Azure Administrator exam <b><i><u><Link href="https://www.credly.com/badges/6b4fb749-f168-448f-a3f3-16104c630493" target="_blank" rel="noreferrer" className="text-green-500">Microsoft Azure certified.</Link></u></i></b>
             </p>
             <p className="text-lg text-muted-foreground">
-                I have dabbled my feet into Web3 development and learned a lot about bridging the gap between traditional Web2 paradigms and how, by harnessing the power of blockchain, we can build decentralized solutions.
+                I have dabbled my feet into Web3 development and learned a lot about bridging the gap between traditional Web2 paradigms and how, by harnessing the power of the blockchain, we can build decentralized solutions.
             </p>
             <h3 className="text-2xl font-semibold text-primary">Languages</h3>
             <ul className="list-disc pl-5">

@@ -46,7 +46,7 @@ export default function LeisurePage() {
                 You know what they say, you are a true Canadian if you love hockey! Well, I am a big fan of it and love cheering on the beloved home town, Toronto Maple Leafs! Never easy being a Leafs fan, but with a young promising core I believe the Leafs will win the Stanley Cup, God willing.
             </p>
             <p className="text-lg text-muted-foreground">
-                The night when the Leafs' captain raises the cup and with chants of "No more '67!". That will be an iconic moment to remember! :)
+                The night when the Leafs' captain raises the cup and with chants of "No more '67!", that will be an iconic moment to remember! :)
             </p>
             <div className="flex justify-center">
               <Image
@@ -68,7 +68,7 @@ export default function LeisurePage() {
               A beautiful, mind-challenging game. Chess has always been an instant classic. From risky gambits to total domination, it is one of my favourite games to play during my spare time.
             </p>
             <p className="text-lg text-muted-foreground">
-              Below you will find a few games I have compiled over the years. You can view my stats by visiting my <b><i><u><Link href="/lichess" className="text-green-500">Lichess Profile.</Link></u></i></b>
+              Below, you will find a few games I have compiled over the years. You can view my profile stats by visiting my <b><i><u><Link href="/lichess" className="text-green-500">Lichess Profile.</Link></u></i></b>
             </p>
             <br />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
