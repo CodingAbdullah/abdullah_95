@@ -1,10 +1,11 @@
 import { Analytics } from "@vercel/analytics/next"
 import type { Metadata } from "next"
 import { JetBrains_Mono } from 'next/font/google'
-import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import Script from "next/script"
+import "./globals.css"
 
 const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"] })
 
@@ -30,6 +31,10 @@ export default function RootLayout({
           <Navigation />
           <main>{children}</main>
           <Analytics mode="production" />
+          <Script id="umami-website-analytics" 
+            src={process.env.UMAMI_URL}
+            data-website-id={process.env.UMAMI_WEBSITE_ID}>
+          </Script>
           <Footer />
         </ThemeProvider>
       </body>
