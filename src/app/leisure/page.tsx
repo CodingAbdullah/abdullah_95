@@ -1,6 +1,19 @@
 import { Card, CardContent } from "../../components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+// Leisure page metadata
+export const metadata: Metadata = {
+  title: "Leisure - Abdullah Muhammad",
+  description: "Discover Abdullah's interests and hobbies including programming personal projects, hockey, and much more.",
+  keywords: ["Abdullah Muhammad", "Leisure", "Hobbies", "Programming", "Hockey", "Chess", "Personal Interests"],
+  openGraph: {
+    title: "Leisure - Abdullah Muhammad",
+    description: "Discover Abdullah's interests and hobbies including programming personal projects, chess, and much more.",
+    type: "website"
+  }
+};
 
 // Custom Leisure page component
 export default async function LeisurePage() {

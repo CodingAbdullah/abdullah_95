@@ -3,6 +3,25 @@ import { Card, CardContent } from "../components/ui/card"
 import { FileText, Github, User, Code, Coffee } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Abdullah Muhammad - Software Engineer Portfolio",
+  description: "Personal portfolio of Abdullah Muhammad, a passionate Software Engineer. Explore my projects, skills, and professional journey in web development.",
+  keywords: ["Abdullah Muhammad", "Software Engineer", "Portfolio", "Web Developer", "React", "Next.js", "Full Stack Developer"],
+  authors: [{ name: "Abdullah Muhammad" }],
+  openGraph: {
+    title: "Abdullah Muhammad - Software Engineer Portfolio",
+    description: "Personal portfolio of Abdullah Muhammad, a passionate Software Engineer. Explore my projects, skills, and professional journey in web development.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Abdullah Muhammad - Software Engineer Portfolio",
+    description: "Personal portfolio of Abdullah Muhammad, a passionate Software Engineer. Explore my projects, skills, and professional journey in web development.",
+  },
+}
 
 // Home component with styling included
 // Libraries for reusable icons, cards used

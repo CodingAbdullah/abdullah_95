@@ -1,6 +1,19 @@
 import { Card, CardContent } from "../../components/ui/card";
 import { SkillsList } from "@/utils/constants/SkillsList";
 import Link from "next/link";
+import { Metadata } from "next";
+
+// Skills page metadata
+export const metadata: Metadata = {
+  title: "Skills - Abdullah Muhammad",
+  description: "Explore Abdullah Muhammad's technical skills including full-stack development, cloud technologies, Web3 development, and programming languages.",
+  keywords: ["Abdullah Muhammad", "Skills", "Full Stack Developer", "Cloud", "Web3", "Crypto", "Data", "DevOps", "QA-Testing", "AWS", "Azure", "React", "Node.js", "Next.js", "Docker", "Jenkins", "Terraform"],
+  openGraph: {
+    title: "Skills - Abdullah Muhammad",
+    description: "Explore Abdullah Muhammad's technical skills including full-stack development, cloud technologies, Web3 development, and programming languages.",
+    type: "website"
+  }
+};
 
 // Custom Skills Page component
 export default async function SkillsPage() {

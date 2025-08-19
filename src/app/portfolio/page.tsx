@@ -3,6 +3,19 @@ import { Button } from "../../components/ui/button";
 import Link from "next/link";
 import { ExternalLink, Github, Globe } from "lucide-react";
 import { projects } from "../../utils/constants/PortfolioProjectList";
+import { Metadata } from "next";
+
+// Portfolio page metadata
+export const metadata: Metadata = {
+  title: "Portfolio - Abdullah Muhammad",
+  description: "Explore Abdullah's portfolio featuring full-stack web applications and technical articles. View projects built with React, Next.js, AWS, and more.",
+  keywords: ["Abdullah Muhammad", "Portfolio", "Projects", "Full Stack", "React", "Node.js", "AWS", "Ethereum", "Next.js", "AI SDK", "Vercel", "OpenAI API", "Supabase", "MDX", "Web Development"],
+  openGraph: {
+    title: "Portfolio - Abdullah Muhammad",
+    description: "Explore Abdullah Muhammad's portfolio featuring full-stack web applications and technical articles. View projects built with React, Next.js, AWS, and more.",
+    type: "website"
+  }
+};
 
 // Custom Portfolio page component
 export default async function PortfolioPage() {

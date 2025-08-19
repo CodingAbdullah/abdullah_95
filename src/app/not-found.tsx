@@ -2,6 +2,17 @@ import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import Link from "next/link";
 import { Home } from "lucide-react";
+import { Metadata } from "next";
+
+// Not Found page metadata
+export const metadata: Metadata = {
+  title: "404 - Page Not Found",
+  description: "The page you are looking for does not exist. Return to the homepage.",
+  robots: {
+    index: false,
+    follow: false
+  }
+};
 
 // Custom 404 Not Found page component
 export default function NotFound() {

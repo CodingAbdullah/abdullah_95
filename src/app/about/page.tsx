@@ -1,5 +1,18 @@
 import { Card, CardContent } from "../../components/ui/card";
 import Image from "next/image";
+import { Metadata } from "next";
+
+// About page metadata
+export const metadata: Metadata = {
+  title: "About - Abdullah Muhammad",
+  description: "Learn about Abdullah's educational background, journey through Software Engineering at McMaster University.",
+  keywords: ["Abdullah Muhammad", "About", "McMaster University", "Software Engineering", "Education", "Biography"],
+  openGraph: {
+    title: "About - Abdullah Muhammad",
+    description: "Learn about Abdullah's educational background, journey through Software Engineering at McMaster University, and his passion for technology.",
+    type: "website"
+  }
+};
 
 // Custom About page component
 export default async function AboutPage() {
