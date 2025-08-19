@@ -43,39 +43,39 @@ export default function Navigation() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link href="/">
-                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
+                <NavigationMenuLink asChild>
+                  <Link href="/" className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
                     Home
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/about">
-                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
+                <NavigationMenuLink asChild>
+                  <Link href="/about" className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
                     About
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/skills">
-                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
+                <NavigationMenuLink asChild>
+                  <Link href="/skills" className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
                     Skills
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/portfolio">
-                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
+                <NavigationMenuLink asChild>
+                  <Link href="/portfolio" className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
                     Portfolio
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/leisure">
-                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
+                <NavigationMenuLink asChild>
+                  <Link href="/leisure" className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
                     Leisure
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>

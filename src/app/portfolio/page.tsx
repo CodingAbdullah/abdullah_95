@@ -31,7 +31,7 @@ export default async function PortfolioPage() {
                   <h3 className="text-lg font-semibold text-primary">{project.title}</h3>
                   <p className="text-sm text-muted-foreground">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech, techIndex) => (
+                    {project.tech.toSorted((a, b) => a.localeCompare(b)).map((tech, techIndex) => (
                       <span key={techIndex} className="px-2 py-1 text-xs bg-primary/10 text-primary rounded-md border border-primary/20 hover:bg-primary/20 hover:scale-105 transition-all duration-200">
                         {tech}
                       </span>
@@ -78,7 +78,7 @@ export default async function PortfolioPage() {
                   <h3 className="text-base font-semibold text-primary">{project.title}</h3>
                   <p className="text-sm text-muted-foreground">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech, techIndex) => (
+                    {project.tech.toSorted((a, b) => a.localeCompare(b)).map((tech, techIndex) => (
                       <span key={techIndex} className="px-2 py-1 text-xs bg-primary/10 text-primary rounded-md border border-primary/20 hover:bg-primary/20 hover:scale-105 transition-all duration-200">
                         {tech}
                       </span>
