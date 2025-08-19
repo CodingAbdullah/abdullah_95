@@ -9,56 +9,123 @@ import {
   NavigationMenuLink,
   NavigationMenuList
 } from "../components/ui/navigation-menu"
-import { ModeToggle } from "./mode-toggle"
+import { Menu, X } from "lucide-react";
 
 // Custom Navigation component
-export function Navigation() {
+export default function Navigation() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  }
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  }
+
   return (
-    <div className="border-b border-primary/20 bg-background/80 backdrop-blur-sm sticky top-0 z-50">
-      <div className="container mx-auto flex h-16 items-center px-4">
-        <NavigationMenu>
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
-                  Home
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/about" legacyBehavior passHref>
-                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
-                  About
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/skills" legacyBehavior passHref>
-                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
-                  Skills
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/portfolio" legacyBehavior passHref>
-                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
-                  Portfolio
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/leisure" legacyBehavior passHref>
-                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
-                  Leisure
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-        <div className="ml-auto">
-          <ModeToggle />
+    <div className="glass-nav sticky top-0 z-50">
+      <div className="container mx-auto px-4">
+        {/* Mobile Layout */}
+        <div className="md:hidden flex h-16 items-center justify-between">
+          <button
+            onClick={toggleMobileMenu}
+            className="p-2 text-primary hover:bg-primary/10 rounded-md"
+            aria-label="Toggle mobile menu"
+          >
+            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
+          <span className="text-lg font-semibold text-primary">Abdullah</span>
+        </div>
+
+        {/* Desktop Layout */}
+        <div className="hidden md:flex h-16 items-center">
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <Link href="/">
+                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
+                    Home
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/about">
+                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
+                    About
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/skills">
+                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
+                    Skills
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/portfolio">
+                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
+                    Portfolio
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/leisure">
+                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
+                    Leisure
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </div>
       </div>
+
+      {/* Mobile Navigation Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden border-t border-primary/20 glass-card">
+          <nav className="container mx-auto px-4 py-4">
+            <div className="flex flex-col space-y-2">
+              <Link 
+                href="/" 
+                className="p-3 text-primary font-medium hover:bg-primary/10 rounded-md transition-colors"
+                onClick={closeMobileMenu}
+              >
+                Home
+              </Link>
+              <Link 
+                href="/about" 
+                className="p-3 text-primary font-medium hover:bg-primary/10 rounded-md transition-colors"
+                onClick={closeMobileMenu}
+              >
+                About
+              </Link>
+              <Link 
+                href="/skills" 
+                className="p-3 text-primary font-medium hover:bg-primary/10 rounded-md transition-colors"
+                onClick={closeMobileMenu}
+              >
+                Skills
+              </Link>
+              <Link 
+                href="/portfolio" 
+                className="p-3 text-primary font-medium hover:bg-primary/10 rounded-md transition-colors"
+                onClick={closeMobileMenu}
+              >
+                Portfolio
+              </Link>
+              <Link 
+                href="/leisure" 
+                className="p-3 text-primary font-medium hover:bg-primary/10 rounded-md transition-colors"
+                onClick={closeMobileMenu}
+              >
+                Leisure
+              </Link>
+            </div>
+          </nav>
+        </div>
+      )}
     </div>
   )
 }

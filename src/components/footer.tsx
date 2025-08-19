@@ -2,11 +2,11 @@ import { Newspaper, Github, Instagram, Linkedin, Twitter } from 'lucide-react'
 import Link from 'next/link'
 
 // Custom Footer component added
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="bg-background/80 backdrop-blur-sm border-t border-primary/20">
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+      <div className="container mx-auto px-4 py-6">
+        <div className="flex flex-col items-center justify-between gap-3 md:flex-row">
           <div className="flex gap-4">
             <Link href="https://github.com/CodingAbdullah" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
               <Github className="h-6 w-6" />
