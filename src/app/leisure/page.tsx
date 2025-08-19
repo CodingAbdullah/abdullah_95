@@ -3,11 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Custom Leisure page component
-export default function LeisurePage() {
+export default async function LeisurePage() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <div className="container mx-auto px-4 py-8 flex-grow space-y-12">
-        <Card className="bg-card/80 backdrop-blur-sm border-primary/20">
+        <Card className="glass-card">
           <CardContent className="p-6 space-y-4">
             <h1 className="text-4xl font-bold tracking-tighter text-primary text-glow">
                 Programming
@@ -30,14 +30,14 @@ export default function LeisurePage() {
               <Image
                 src="https://genericbucket95.s3.us-east-2.amazonaws.com/programming.png"
                 alt="Programming"
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 border-2 border-primary/20"
                 width={300}
                 height={200}
               />
             </div>
           </CardContent>
         </Card>
-        <Card className="bg-card/80 backdrop-blur-sm border-primary/20">
+        <Card className="glass-card">
           <CardContent className="p-6 space-y-4">
             <h1 className="text-4xl font-bold tracking-tighter text-primary text-glow">
                 Hockey
@@ -52,14 +52,14 @@ export default function LeisurePage() {
               <Image
                 src="https://genericbucket95.s3.us-east-2.amazonaws.com/celly.png"
                 alt="Toronto Maple Leafs Celebration"
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 border-2 border-primary/20"
                 width={300}
                 height={200}
               />
             </div>
           </CardContent>
         </Card>
-        <Card className="bg-card/80 backdrop-blur-sm border-primary/20">
+        <Card className="glass-card">
           <CardContent className="p-6 space-y-4">
             <h1 className="text-4xl font-bold tracking-tighter text-primary text-glow">
               Chess
@@ -71,35 +71,32 @@ export default function LeisurePage() {
               Below, you will find a few games I have compiled over the years. You can view my profile stats by visiting my <b><i><u><Link href="/lichess" className="text-green-500">Lichess Profile.</Link></u></i></b>
             </p>
             <br />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="space-y-4">
                 <h5 className="text-xl font-semibold text-primary">Knight Signature: Smothered Mate</h5>
-                <p className="text-lg text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   A rare checkmating sequence. A sneaky double check and a queen sac smothers the king and a lone knight wins the game!
                 </p>
-                <br />
-                <video className="rounded-lg shadow-lg" width="370" height="290" controls>
+                <video className="w-full max-w-md mx-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 border-2 border-primary/20" controls>
                   <source src="https://genericbucket95.s3.us-east-2.amazonaws.com/knight.mp4" type="video/mp4" />
                 </video>
               </div>
-              <div>
+              <div className="space-y-4">
                 <h5 className="text-xl font-semibold text-primary">A Queen Sac for the Win</h5>
-                <p className="text-lg text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Often times, it matters how well your pieces are positioned, not your lead in material. An opera mate is hidden, can you spot it?
                 </p>
-                <br />
-                <video className="rounded-lg shadow-lg" width="370" height="290" controls>
+                <video className="w-full max-w-md mx-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 border-2 border-primary/20" controls>
                   <source src="https://genericbucket95.s3.us-east-2.amazonaws.com/BigComeback.mp4" type="video/mp4" />
                 </video>
               </div>
-              <div className="col-span-1 md:col-span-2 flex justify-center">
-                <div className="w-1/2 flex flex-col items-center">
+              <div className="col-span-1 lg:col-span-2 flex justify-center">
+                <div className="space-y-4 text-center max-w-md">
                   <h5 className="text-xl font-semibold text-primary">Every Little Bit Helps</h5>
-                  <p className="text-lg text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     This game reminds me of race against time. Even the smallest of pieces (pawns) can be very helpful! Again, positioning is key :)
                   </p>
-                  <br />
-                  <video className="rounded-lg shadow-lg" width="370" height="290" controls>
+                  <video className="w-full max-w-md mx-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 border-2 border-primary/20" controls>
                     <source src="https://genericbucket95.s3.us-east-2.amazonaws.com/KnightWin.mp4" type="video/mp4" />
                   </video>
                 </div>
