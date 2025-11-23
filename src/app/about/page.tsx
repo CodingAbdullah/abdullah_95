@@ -48,6 +48,25 @@ export default async function AboutPage() {
         <Card className="glass-card">
           <CardContent className="p-4 sm:p-6 space-y-4 text-center sm:text-left">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tighter text-primary text-glow">
+              Professional Background
+            </h1>
+            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground">
+              I am a Full-Stack Engineer specializing in DevOps, cloud-native development, and modern web applications. I build and deploy scalable systems using AWS, Docker, Jenkins, and CI/CD pipelines, with a strong focus on automation, reliability, and performance.
+            </p>
+            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground">
+              My core stack includes Next.js, TypeScript, React, Node.js, and Express.js, and I use AI-powered tools like Cursor and Claude to accelerate development.
+            </p>
+            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground">
+              I also work within the Ethereum, Web3, and blockchain ecosystem, building dashboards, integrating on-chain data, and exploring Bitcoin and decentralized application workflows.
+            </p>
+            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground">
+              I thrive in agile environments, with a strong emphasis on testing and quality using Selenium WebDriver, JUnit, and Cucumber, ensuring reliable development and continuous delivery.
+            </p>
+          </CardContent>
+        </Card>
+        <Card className="glass-card">
+          <CardContent className="p-4 sm:p-6 space-y-4 text-center sm:text-left">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tighter text-primary text-glow">
                 Today. The Future.
             </h1>
             <p className="text-sm sm:text-base lg:text-lg text-muted-foreground">
