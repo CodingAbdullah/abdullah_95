@@ -22,7 +22,7 @@ export const projects: PortfolioType[] = [
       title: "Medium Article Scraper",
       description: "Extract valuable content from non-paywall Medium articles effortlessly. Prepare text documents, audio files, and LLM-ready data using this free article scraper.",
       tech: ["AWS S3", "Next.js", "React.js", "Open AI TTS API", "Firecrawl API"],
-      github: "https://github.com/CodingAbdullah/Medium-Article-Scraper",
+      github: "#",
       demo: "https://mediumdotcomscraper.pro",
       featured: false
     },

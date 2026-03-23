@@ -133,12 +133,6 @@ export default async function PortfolioPage() {
           <CardContent className="p-6 space-y-4 text-center">
             <h2 className="text-xl sm:text-2xl font-bold text-primary">More Work & Articles</h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-                <Link href="https://codingAbdullah.github.io/Portfolio-Page/" target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Complete Portfolio
-                </Link>
-              </Button>
               <Button variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                 <Link href="https://medium.com/@abdullah_95" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="w-4 h-4 mr-2" />

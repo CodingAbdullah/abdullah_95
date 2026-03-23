@@ -57,7 +57,7 @@ export default async function Home() {
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground glass-button" asChild>
-                  <Link target="_blank" href="https://github.com/CodingAbdullah">
+                  <Link target="_blank" rel="noopener noreferrer" href="https://github.com/CodingAbdullah">
                     <Github className="mr-2 h-5 w-5" />
                     GitHub
                   </Link>
@@ -84,6 +84,7 @@ export default async function Home() {
                   src="https://genericbucket95.s3.us-east-2.amazonaws.com/me.jpg"
                   alt="Abdullah Muhammad - Full-Stack Engineer"
                   className="object-cover"
+                  sizes="(max-width: 640px) 288px, (max-width: 1024px) 320px, 400px"
                   priority
                   fill
                 />
