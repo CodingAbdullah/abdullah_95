@@ -113,7 +113,34 @@
     to { opacity: 1; transform: translateY(0); }
   }
   
-  .cursor-blink {
+  /* Terminal-style type-out: reveals a monospace string one character (1ch) at a time.
+     Set --chars on .type-frame to the string length; the frame reserves room for the text
+     plus a one-character cursor. Vertical padding keeps the glow from being clipped. */
+  .type-frame {
+    display: inline-block;
+    width: calc((var(--chars) + 1) * 1ch);
+    text-align: left;
+    letter-spacing: normal;
+  }
+
+  .type-out {
+    display: inline-block;
+    vertical-align: bottom;
+    white-space: nowrap;
+    overflow: hidden;
+    width: calc(var(--chars) * 1ch);
+    padding-block: 0.2em;
+    margin-block: -0.2em;
+    animation: type-out 0.9s steps(var(--chars), end) 0.3s both;
+  }
+
+  @keyframes type-out {
+    from { width: 0; }
+  }
+
+  /* Blinking "_" after the element's text, drawn in CSS so it is not part of the indexed text */
+  .terminal-cursor::after {
+    content: "_";
     animation: blink 1.1s step-end infinite;
   }
 

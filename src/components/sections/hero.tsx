@@ -11,8 +11,12 @@ export default function Hero() {
       <div className="flex flex-col-reverse items-center gap-10 sm:flex-row sm:items-center sm:justify-between">
         <div className="space-y-5 text-center sm:text-left fade-in">
           <p className="font-mono text-sm text-muted-foreground">$ whoami</p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-primary text-glow">
-            {NAME}<span className="cursor-blink" aria-hidden="true">_</span>
+          {/* Full name is always in the HTML; .type-out only animates its visible width, one character per step.
+              .type-frame reserves the final width so centered text does not shift while typing. */}
+          <h1 className="whitespace-nowrap text-[clamp(1.5rem,7.5vw,2.5rem)] sm:text-[clamp(2rem,5vw,3.75rem)] leading-tight font-bold text-primary text-glow">
+            <span className="type-frame terminal-cursor" style={{ "--chars": NAME.length } as React.CSSProperties}>
+              <span className="type-out">{NAME}</span>
+            </span>
           </h1>
           <p className="text-xl sm:text-2xl font-semibold text-foreground">{ROLE}</p>
           <p className="flex items-center justify-center sm:justify-start gap-2 font-mono text-sm text-muted-foreground">
