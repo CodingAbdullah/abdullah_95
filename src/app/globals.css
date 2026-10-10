@@ -114,11 +114,14 @@
   }
   
   /* Terminal-style type-out: reveals a monospace string one character (1ch) at a time.
-     Set --chars on .type-frame to the string length; the frame reserves room for the text
-     plus a one-character cursor. Vertical padding keeps the glow from being clipped. */
+     Set --chars on .type-frame to the string length.
+     - The animation caps max-width and fills backwards only, so once it ends the cap is removed and
+       the full text always shows, even if a browser measured 1ch with the fallback font (seen in Safari).
+     - .type-frame reserves at least the final width so centered text does not shift while typing.
+     - Vertical padding keeps the glow from being clipped. */
   .type-frame {
     display: inline-block;
-    width: calc((var(--chars) + 1) * 1ch);
+    min-width: calc((var(--chars) + 1) * 1ch);
     text-align: left;
     letter-spacing: normal;
   }
@@ -128,14 +131,14 @@
     vertical-align: bottom;
     white-space: nowrap;
     overflow: hidden;
-    width: calc(var(--chars) * 1ch);
     padding-block: 0.2em;
     margin-block: -0.2em;
-    animation: type-out 0.9s steps(var(--chars), end) 0.3s both;
+    animation: type-out 0.9s steps(var(--chars), end) 0.3s backwards;
   }
 
   @keyframes type-out {
-    from { width: 0; }
+    from { max-width: 0; }
+    to { max-width: calc(var(--chars) * 1ch); }
   }
 
   /* Blinking "_" after the element's text, drawn in CSS so it is not part of the indexed text */
