@@ -28,7 +28,7 @@ export const SkillGroups: SkillGroup[] = [
 export const Certifications: Certification[] = [
     {
         name: "AWS Certified Cloud Practitioner",
-        url: "https://www.credly.com/badges/ea32a77f-e17f-4750-b1b7-b62d3388deb2"
+        url: "https://www.credly.com/badges/289525d4-67a9-48e4-abf5-d40d1b43b245/public_url"
     },
     {
         name: "AWS Certified AI Practitioner"
