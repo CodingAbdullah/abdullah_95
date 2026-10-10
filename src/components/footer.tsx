@@ -19,7 +19,7 @@ export default function Footer() {
     <footer className="bg-background/80 backdrop-blur-sm border-t border-primary/20 font-mono">
       <div className="container mx-auto px-4 max-w-5xl py-6">
         <div className="flex flex-col items-center justify-between gap-3 md:flex-row">
-          <ul className="flex gap-4">
+          <ul className="flex flex-wrap justify-center gap-3 sm:gap-4">
             {socialLinks.map(({ href, label, Icon }) => (
               <li key={label}>
                 <Link href={href} {...(href.startsWith("mailto:") ? {} : { target: "_blank", rel: "noopener noreferrer" })} className="flex flex-col items-center gap-1 text-muted-foreground hover:text-primary">

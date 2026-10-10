@@ -4,10 +4,10 @@ import Section from "./section"
 import { projects } from "@/utils/constants/PortfolioProjectList"
 import { LINKS } from "@/utils/constants/Profile"
 
-// Project cards, newest first as listed in PortfolioProjectList
+// Selected project cards, newest first as listed in PortfolioProjectList
 export default function Projects() {
   return (
-    <Section id="projects" title="Projects">
+    <Section id="projects" title="Selected Projects">
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((project) => (
           <article key={project.title} className="glass-card rounded-lg p-6 flex flex-col gap-4 transition-transform duration-300 hover:-translate-y-1">

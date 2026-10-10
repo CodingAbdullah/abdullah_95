@@ -1,12 +1,10 @@
 import Section from "./section"
 import { Certifications } from "@/utils/constants/SkillsList"
-import { projects } from "@/utils/constants/PortfolioProjectList"
 
 // Technical summary and headline numbers
 export default function About() {
   const stats = [
-    { value: `${Certifications.length}`, label: "Cloud & IaC certifications" },
-    { value: `${projects.length}`, label: "Shipped projects" },
+    { value: `${Certifications.length}`, label: "Certifications" },
     { value: "50+", label: "Technical articles" }
   ]
 
@@ -26,7 +24,7 @@ export default function About() {
           and work with Solidity smart contracts.
         </p>
       </div>
-      <dl className="mt-8 grid grid-cols-3 gap-4 max-w-3xl">
+      <dl className="mt-8 grid grid-cols-2 gap-4 max-w-md">
         {stats.map((stat) => (
           <div key={stat.label} className="glass-card rounded-lg p-3 sm:p-4 flex flex-col-reverse justify-end text-center sm:text-left">
             <dt className="text-xs sm:text-sm leading-snug text-muted-foreground">{stat.label}</dt>
