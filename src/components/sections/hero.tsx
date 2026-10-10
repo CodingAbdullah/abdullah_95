@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section className="container mx-auto px-4 max-w-5xl pt-16 pb-12 sm:pt-24 sm:pb-16">
       <div className="flex flex-col-reverse items-center gap-10 sm:flex-row sm:items-center sm:justify-between">
-        <div className="space-y-5 text-center sm:text-left fade-in">
+        <div className="space-y-5 text-center sm:text-left">
           <p className="font-mono text-sm text-muted-foreground">$ whoami</p>
           {/* Full name is always in the HTML; .type-out only animates its visible width, one character per step.
               .type-frame reserves the final width so centered text does not shift while typing. */}
@@ -57,7 +57,7 @@ export default function Hero() {
             alt={NAME}
             className="object-cover"
             sizes="(max-width: 640px) 160px, (max-width: 1024px) 192px, 224px"
-            priority
+            preload
             fill
           />
         </div>

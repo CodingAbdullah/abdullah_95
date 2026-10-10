@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/next"
 import { Geist, JetBrains_Mono } from 'next/font/google'
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import Script from "next/script"
@@ -12,6 +12,12 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
 const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 const title = `${NAME} - ${ROLE}`
+
+// Dark-only site: tint mobile browser chrome to match the background
+export const viewport: Viewport = {
+  themeColor: "#161f1a",
+  colorScheme: "dark"
+}
 
 // Site-wide metadata, shared by every route
 export const metadata: Metadata = {
@@ -51,10 +57,14 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <Analytics mode="production" />
-        <Script id="umami-website-analytics"
-          src={process.env.UMAMI_URL}
-          data-website-id={process.env.UMAMI_WEBSITE_ID}>
-        </Script>
+        {process.env.UMAMI_URL && process.env.UMAMI_WEBSITE_ID && (
+          <Script
+            id="umami-website-analytics"
+            src={process.env.UMAMI_URL}
+            data-website-id={process.env.UMAMI_WEBSITE_ID}
+            strategy="lazyOnload"
+          />
+        )}
       </body>
     </html>
   )
