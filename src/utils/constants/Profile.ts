@@ -5,7 +5,9 @@ export const LOCATION = "Toronto, ON, Canada";
 export const SITE_URL = "https://kingabdullah.codes";
 export const RESUME_URL = "https://genericbucket95.s3.us-east-2.amazonaws.com/Website+Resume.pdf";
 export const PHOTO_URL = "https://genericbucket95.s3.us-east-2.amazonaws.com/me.jpg";
+// SUMMARY is the search and link-preview description; TAGLINE sits under the role in the hero
 export const SUMMARY = "Full-stack engineer focused on DevOps, cloud-native development, and modern web applications. I build and ship with AWS, Docker, Terraform, and Next.js.";
+export const TAGLINE = "Focused on DevOps, cloud-native development, and modern web applications. I build and ship with AWS, Docker, Terraform, and Next.js.";
 
 export const ARTICLE_COUNT = "80+";
 export const EMAIL = "abdullahmd326@gmail.com";

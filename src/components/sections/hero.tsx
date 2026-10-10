@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { FileText, Github, Linkedin, Mail, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { LINKS, LOCATION, NAME, PHOTO_URL, RESUME_URL, ROLE, SUMMARY } from "@/utils/constants/Profile"
+import { LINKS, LOCATION, NAME, PHOTO_URL, RESUME_URL, ROLE, TAGLINE } from "@/utils/constants/Profile"
 
 // Top-of-page introduction with name, role, location, and primary links
 export default function Hero() {
@@ -19,7 +19,7 @@ export default function Hero() {
             <MapPin className="h-4 w-4 text-primary" aria-hidden="true" />
             {LOCATION}
           </p>
-          <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">{SUMMARY}</p>
+          <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">{TAGLINE}</p>
           <div className="flex flex-wrap justify-center sm:justify-start gap-3 pt-2">
             <Button asChild>
               <Link href={RESUME_URL} target="_blank" rel="noopener noreferrer">

@@ -4,7 +4,7 @@ import type { Metadata } from "next"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import Script from "next/script"
-import { NAME, PHOTO_URL, ROLE, SITE_URL, SUMMARY } from "@/utils/constants/Profile"
+import { NAME, ROLE, SITE_URL, SUMMARY } from "@/utils/constants/Profile"
 import "./globals.css"
 
 // Geist for body text, JetBrains Mono for headings, labels, and other terminal-style accents
@@ -30,14 +30,12 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: NAME,
     type: "profile",
-    locale: "en_CA",
-    images: [{ url: PHOTO_URL, alt: NAME }]
+    locale: "en_CA"
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title,
-    description: SUMMARY,
-    images: [PHOTO_URL]
+    description: SUMMARY
   }
 }
 
