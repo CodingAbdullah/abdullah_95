@@ -35,6 +35,6 @@ export const Certifications: Certification[] = [
     },
     {
         name: "Microsoft Azure Fundamentals (AZ-900)",
-        url: "https://www.credly.com/badges/6b4fb749-f168-448f-a3f3-16104c630493"
+        url: "https://www.credly.com/badges/1b6c1c9e-32c9-471f-8bac-297bb87751ce/public_url"
     }
 ];
