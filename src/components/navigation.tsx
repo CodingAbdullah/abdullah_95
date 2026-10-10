@@ -70,13 +70,6 @@ export default function Navigation() {
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link href="/leisure" className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
-                    Leisure
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
         </div>
@@ -114,13 +107,6 @@ export default function Navigation() {
                 onClick={closeMobileMenu}
               >
                 Portfolio
-              </Link>
-              <Link 
-                href="/leisure" 
-                className="p-3 text-primary font-medium hover:bg-primary/10 rounded-md transition-colors"
-                onClick={closeMobileMenu}
-              >
-                Leisure
               </Link>
             </div>
           </nav>

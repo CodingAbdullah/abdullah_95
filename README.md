@@ -32,15 +32,6 @@ This is the personal portfolio website of Abdullah Muhammad, a Software Engineer
 - Full-stack web applications and cloud solutions
 - Project technology stacks and descriptions
 
-### 🎯 **Leisure Activities**
-- Programming personal projects and continuous learning
-- Hockey
-- Chess
-
-### ♟️ **LiChess Integration**
-- Live chess profile statistics via Lichess API
-
-
 ### 📄 **Mock Resume**
 - Professional resume available for download
 - Direct access to career highlights and achievements
@@ -54,7 +45,6 @@ This website is built using modern web technologies:
 - **UI Components:** Radix UI primitives with custom styling
 - **Icons:** Lucide React
 - **Deployment:** Static site generation with Next.js
-- **APIs:** Lichess API integration for chess data
 - **TypeScript:** Full type safety throughout the application
 
 ## Key Technical Features
@@ -64,7 +54,6 @@ This website is built using modern web technologies:
 - **Performance Optimized** with Next.js Image optimization
 - **Accessibility** features and semantic HTML
 - **Modern UI/UX** with glassmorphism design patterns
-- **API Integration** with external chess data services
 
 ## Getting Started
 
@@ -107,10 +96,7 @@ src/
 ├── app/                   # Next.js App Router pages
 │   ├── about/             # About page
 │   ├── skills/            # Skills showcase
-│   ├── portfolio/         # Portfolio projects
-│   ├── leisure/           # Personal interests
-│   ├── lichess/           # Chess profile
-│   └── api/               # API routes
+│   └── portfolio/         # Portfolio projects
 ├── components/            # Reusable React components
 │   ├── ui/                # UI component library
 └── utils/                 # Utilities and constants
@@ -123,7 +109,6 @@ src/
 - **Website:** [kingabdullah.codes](https://kingabdullah.codes)
 - **GitHub:** [CodingAbdullah](https://github.com/CodingAbdullah)
 - **Medium:** [@abdullah_95](https://medium.com/@abdullah_95)
-- **Lichess:** [Lichess API Documentation](https://lichess.org/api)
 
 ---
 
