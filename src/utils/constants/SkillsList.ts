@@ -31,7 +31,8 @@ export const Certifications: Certification[] = [
         url: "https://www.credly.com/badges/289525d4-67a9-48e4-abf5-d40d1b43b245/public_url"
     },
     {
-        name: "AWS Certified AI Practitioner"
+        name: "AWS Certified AI Practitioner",
+        url: "https://www.credly.com/badges/2a5e6f7d-49cb-4461-931f-beff518ec37f/public_url"
     },
     {
         name: "Microsoft Azure Fundamentals (AZ-900)",
