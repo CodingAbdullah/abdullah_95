@@ -1,38 +1,26 @@
 import { Certification, SkillGroup } from "../types/SkillsType";
 
-// Skill groups for the skills page, aligned with the resume
+// Skill groups for the skills page: the strongest, most relevant skills only
 export const SkillGroups: SkillGroup[] = [
     {
         title: "Languages",
-        skills: ["JavaScript (ES7+)", "TypeScript", "Java", "SQL", "Solidity", "Bash", "PowerShell"]
+        skills: ["TypeScript", "JavaScript", "Java", "Rust", "SQL", "Bash", "Solidity"]
     },
     {
         title: "Frontend",
-        skills: ["React.js", "Next.js", "Redux Toolkit", "TailwindCSS", "Bootstrap"]
+        skills: ["React", "Next.js", "TailwindCSS"]
     },
     {
         title: "Backend & Data",
-        skills: ["Node.js", "Express.js", "REST APIs", "MongoDB", "Supabase"]
+        skills: ["Node.js", "Express.js", "MongoDB", "Supabase"]
     },
     {
         title: "Cloud & DevOps",
-        skills: ["AWS", "Azure", "Docker", "Jenkins", "Terraform", "CI/CD", "Maven", "AWS CLI"]
+        skills: ["AWS", "Azure", "Terraform", "Docker", "Jenkins", "CI/CD"]
     },
     {
         title: "Testing",
-        skills: ["Selenium WebDriver", "Cucumber", "JUnit", "Mocha.js"]
-    },
-    {
-        title: "Web3",
-        skills: ["Ethereum", "Smart Contracts", "Web3.js", "Remix IDE", "Ganache CLI"]
-    },
-    {
-        title: "Mainframe",
-        skills: ["COBOL", "JCL", "ISPF", "TSO"]
-    },
-    {
-        title: "AI & Developer Tools",
-        skills: ["Claude", "Cursor", "v0", "Replit Agent", "Git", "GitHub", "Bitbucket", "Jira", "VS Code", "Eclipse", "Jupyter Notebook", "Vim"]
+        skills: ["Selenium WebDriver", "Cucumber", "JUnit"]
     }
 ];
 
