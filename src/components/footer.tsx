@@ -1,4 +1,4 @@
-import { Newspaper, Github, Instagram, Linkedin, BookOpen } from 'lucide-react'
+import { Newspaper, Github, Instagram, Linkedin, BookOpen, Mail } from 'lucide-react'
 import { FaXTwitter } from 'react-icons/fa6'
 import Link from 'next/link'
 import { LINKS, NAME } from '@/utils/constants/Profile'
@@ -6,6 +6,7 @@ import { LINKS, NAME } from '@/utils/constants/Profile'
 const socialLinks = [
   { href: LINKS.github, label: "GitHub", Icon: Github },
   { href: LINKS.linkedin, label: "LinkedIn", Icon: Linkedin },
+  { href: LINKS.email, label: "Email", Icon: Mail },
   { href: LINKS.medium, label: "Medium", Icon: Newspaper },
   { href: LINKS.blog, label: "Blog", Icon: BookOpen },
   { href: LINKS.x, label: "X", Icon: FaXTwitter },
@@ -21,7 +22,7 @@ export default function Footer() {
           <ul className="flex gap-4">
             {socialLinks.map(({ href, label, Icon }) => (
               <li key={label}>
-                <Link href={href} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-muted-foreground hover:text-primary">
+                <Link href={href} {...(href.startsWith("mailto:") ? {} : { target: "_blank", rel: "noopener noreferrer" })} className="flex flex-col items-center gap-1 text-muted-foreground hover:text-primary">
                   <Icon className="h-5 w-5" aria-hidden="true" />
                   <span className="text-[10px]">{label}</span>
                 </Link>

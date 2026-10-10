@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { FileText, Github, Linkedin, MapPin } from "lucide-react"
+import { FileText, Github, Linkedin, Mail, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { LINKS, LOCATION, NAME, PHOTO_URL, RESUME_URL, ROLE, SUMMARY } from "@/utils/constants/Profile"
 
@@ -37,6 +37,12 @@ export default function Hero() {
               <Link href={LINKS.linkedin} target="_blank" rel="noopener noreferrer">
                 <Linkedin aria-hidden="true" />
                 LinkedIn
+              </Link>
+            </Button>
+            <Button variant="outline" className="border-primary/40 text-primary hover:bg-primary/10 hover:text-primary" asChild>
+              <Link href={LINKS.email}>
+                <Mail aria-hidden="true" />
+                Email
               </Link>
             </Button>
           </div>

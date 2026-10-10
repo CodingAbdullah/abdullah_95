@@ -7,7 +7,10 @@ export const RESUME_URL = "https://genericbucket95.s3.us-east-2.amazonaws.com/We
 export const PHOTO_URL = "https://genericbucket95.s3.us-east-2.amazonaws.com/me.jpg";
 export const SUMMARY = "Full-stack engineer focused on DevOps, cloud-native development, and modern web applications. I build and ship with AWS, Docker, Terraform, and Next.js.";
 
+export const EMAIL = "abdullahmd326@gmail.com";
+
 export const LINKS = {
+    email: `mailto:${EMAIL}`,
     github: "https://github.com/CodingAbdullah",
     linkedin: "https://www.linkedin.com/in/softwaredeveloperabdullah",
     medium: "https://medium.com/@abdullah_95",
