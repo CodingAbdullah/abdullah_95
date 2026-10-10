@@ -30,7 +30,7 @@ const personJsonLd = {
     name: cert.name,
     ...(cert.url && { url: cert.url })
   })),
-  knowsAbout: ["AWS", "Azure", "Terraform", "Docker", "Jenkins", "CI/CD", "TypeScript", "Rust", "Next.js", "React", "Node.js", "Selenium", "Ethereum"],
+  knowsAbout: ["AWS", "Azure", "Terraform", "Docker", "Jenkins", "CI/CD", "n8n", "TypeScript", "Rust", "Next.js", "React", "Node.js", "Selenium", "Ethereum"],
   sameAs: [LINKS.github, LINKS.linkedin, LINKS.medium, LINKS.blog, LINKS.x]
 }
 

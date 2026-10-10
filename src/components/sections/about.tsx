@@ -14,7 +14,7 @@ export default function About() {
       <div className="space-y-4 text-lg leading-relaxed text-muted-foreground max-w-3xl">
         <p>
           I build and deploy full-stack applications and the infrastructure behind them: AWS and Azure, Docker,
-          Jenkins pipelines, and Terraform, with a focus on automation, reliability, and performance.
+          Jenkins pipelines, Terraform, and n8n workflows, with a focus on automation, reliability, and performance.
         </p>
         <p>
           My core stack is TypeScript, Next.js, React, Node.js, and Express.js. I use AI-assisted tooling

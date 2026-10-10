@@ -16,7 +16,7 @@ export const SkillGroups: SkillGroup[] = [
     },
     {
         title: "Cloud & DevOps",
-        skills: ["AWS", "Azure", "Terraform", "Docker", "Jenkins", "CI/CD"]
+        skills: ["AWS", "Azure", "Terraform", "Docker", "Jenkins", "CI/CD", "n8n"]
     },
     {
         title: "Testing",
