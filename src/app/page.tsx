@@ -1,9 +1,10 @@
 import { Button } from "../components/ui/button"
-import { FileText, Github } from 'lucide-react'
+import { FileText, Github, MapPin } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import { Metadata } from "next"
 import { TypewriterEffect } from "../components/typewriter-effect"
+import { LOCATION, RESUME_URL } from "@/utils/constants/Profile"
 
 export const metadata: Metadata = {
   title: "Abdullah Muhammad - Software Engineer Portfolio",
@@ -44,6 +45,10 @@ export default async function Home() {
                 <h2 className="text-2xl font-bold tracking-tighter text-primary text-glow sm:text-3xl lg:text-4xl">
                   Full-Stack Engineer
                 </h2>
+                <p className="flex items-center justify-center lg:justify-start gap-2 text-base sm:text-lg text-muted-foreground">
+                  <MapPin className="h-5 w-5 text-primary" />
+                  {LOCATION}
+                </p>
                 <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
                   Specializing in DevOps, cloud-native development, and modern web applications. Building scalable systems with AWS, Docker, Next.js, and blockchain technologies.
                 </p>
@@ -51,7 +56,7 @@ export default async function Home() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 glass-button" asChild>
-                  <Link href="https://genericbucket95.s3.us-east-2.amazonaws.com/Website+Resume.pdf">
+                  <Link href={RESUME_URL} target="_blank" rel="noopener noreferrer">
                     <FileText className="mr-2 h-5 w-5" />
                     View Resume
                   </Link>

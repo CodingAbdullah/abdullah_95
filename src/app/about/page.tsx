@@ -1,6 +1,7 @@
 import { Card, CardContent } from "../../components/ui/card";
 import Image from "next/image";
 import { Metadata } from "next";
+import { LOCATION } from "@/utils/constants/Profile";
 
 // About page metadata
 export const metadata: Metadata = {
@@ -70,10 +71,7 @@ export default async function AboutPage() {
                 Today. The Future.
             </h1>
             <p className="text-sm sm:text-base lg:text-lg text-muted-foreground">
-                Originally from Brampton, I graduated McMaster in June 2018. The journey was a surreal experience and one I will never forget. The daily grind for six years to pursue my degree was a major accomplishment.
-            </p>
-            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground">
-                I am working right here in Toronto. I greatly appreciate you taking the time to read about me. Much love!
+                I graduated from McMaster in 2018 and am based in {LOCATION}. Thanks for taking the time to read about me!
             </p>
           </CardContent>
         </Card>
