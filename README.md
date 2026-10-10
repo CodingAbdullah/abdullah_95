@@ -9,7 +9,7 @@ Single-page portfolio for Abdullah Muhammad, a Full-Stack Engineer based in Toro
 - **Hero:** name, role, location, and links to resume, GitHub, and LinkedIn
 - **About:** technical summary (cloud/DevOps, full-stack, testing, Web3)
 - **Skills:** grouped skills and certifications (AWS, Azure, Terraform)
-- **Projects:** live projects with source links, plus 50+ articles on Medium
+- **Projects:** live projects with source links, plus 80+ articles on the blog and Medium
 - **Education:** B.Eng., Software Engineering, McMaster University
 
 The old `/about`, `/skills`, and `/portfolio` routes permanently redirect to their sections.

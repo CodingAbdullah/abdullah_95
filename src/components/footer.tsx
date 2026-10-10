@@ -7,8 +7,8 @@ const socialLinks = [
   { href: LINKS.github, label: "GitHub", Icon: Github },
   { href: LINKS.linkedin, label: "LinkedIn", Icon: Linkedin },
   { href: LINKS.email, label: "Email", Icon: Mail },
-  { href: LINKS.medium, label: "Medium", Icon: Newspaper },
   { href: LINKS.blog, label: "Blog", Icon: BookOpen },
+  { href: LINKS.medium, label: "Medium", Icon: Newspaper },
   { href: LINKS.x, label: "X", Icon: FaXTwitter },
   { href: LINKS.instagram, label: "Instagram", Icon: Instagram }
 ]

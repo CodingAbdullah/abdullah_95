@@ -2,7 +2,7 @@ import Link from "next/link"
 import { ExternalLink, Github, Globe, Lock } from "lucide-react"
 import Section from "./section"
 import { projects } from "@/utils/constants/PortfolioProjectList"
-import { LINKS } from "@/utils/constants/Profile"
+import { ARTICLE_COUNT, LINKS } from "@/utils/constants/Profile"
 
 // Selected project cards, newest first as listed in PortfolioProjectList
 export default function Projects() {
@@ -43,11 +43,17 @@ export default function Projects() {
         ))}
       </div>
       <p className="mt-8 text-sm text-muted-foreground">
-        I also write about cloud, DevOps, testing, AI, and Web3:{" "}
-        <Link href={LINKS.medium} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">
-          50+ articles on Medium
+        I also write about cloud, DevOps, testing, AI, and Web3, with {ARTICLE_COUNT} articles on{" "}
+        <Link href={LINKS.blog} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">
+          my blog
           <ExternalLink className="ml-1 inline h-3 w-3" aria-hidden="true" />
         </Link>
+        {" "}and{" "}
+        <Link href={LINKS.medium} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">
+          Medium
+          <ExternalLink className="ml-1 inline h-3 w-3" aria-hidden="true" />
+        </Link>
+        .
       </p>
     </Section>
   )

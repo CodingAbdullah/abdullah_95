@@ -7,6 +7,7 @@ export const RESUME_URL = "https://genericbucket95.s3.us-east-2.amazonaws.com/We
 export const PHOTO_URL = "https://genericbucket95.s3.us-east-2.amazonaws.com/me.jpg";
 export const SUMMARY = "Full-stack engineer focused on DevOps, cloud-native development, and modern web applications. I build and ship with AWS, Docker, Terraform, and Next.js.";
 
+export const ARTICLE_COUNT = "80+";
 export const EMAIL = "abdullahmd326@gmail.com";
 
 export const LINKS = {

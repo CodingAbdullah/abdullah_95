@@ -1,11 +1,12 @@
 import Section from "./section"
 import { Certifications } from "@/utils/constants/SkillsList"
+import { ARTICLE_COUNT } from "@/utils/constants/Profile"
 
 // Technical summary and headline numbers
 export default function About() {
   const stats = [
     { value: `${Certifications.length}`, label: "Certifications" },
-    { value: "50+", label: "Technical articles" }
+    { value: ARTICLE_COUNT, label: "Technical articles" }
   ]
 
   return (
