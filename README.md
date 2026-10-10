@@ -1,107 +1,62 @@
 # Abdullah Muhammad - Portfolio Website
 
-A modern, responsive personal portfolio website showcasing the work and skills of me, Abdullah Muhammad.
-
-## About
-
-This is the personal portfolio website of Abdullah Muhammad, a Software Engineering graduate from McMaster University. The site serves as a comprehensive showcase of professional experience, technical skills, personal projects, and interests.
+Single-page portfolio for Abdullah Muhammad, a Full-Stack Engineer based in Toronto, ON, Canada.
 
 **Live Website:** [kingabdullah.codes](https://kingabdullah.codes)
 
-## Features
+## Sections
 
-### 🏠 **Home Page**
-- Quick navigation to key sections
-- Direct links to mock resume and GitHub profile
+- **Hero:** name, role, location, and links to resume, GitHub, and LinkedIn
+- **About:** technical summary (cloud/DevOps, full-stack, testing, Web3)
+- **Skills:** grouped skills and certifications (AWS, Azure, Terraform)
+- **Projects:** live projects with source links, plus 50+ articles on Medium
+- **Education:** B.Eng., Software Engineering, McMaster University
 
-### 👨‍💻 **About Section**
-- Educational background and journey
-- Personal story and career development
-- University experience at McMaster
-
-### 🛠️ **Skills Showcase**
-- **Programming Languages:** JavaScript, TypeScript, Python, Java, and more
-- **Full Stack Technologies:** React, Next.js, Node.js, Express, MongoDB, PostgreSQL
-- **Cloud Platforms:** AWS Certified, Azure Certified
-- **Development Tools:** Git, Docker, VS Code, and various testing frameworks
-- **Web3 Development:** Blockchain technologies and decentralized applications
-
-### 💼 **Portfolio**
-- Featured projects with site and GitHub links
-- Complete portfolio with 50+ technical articles on Medium
-- Full-stack web applications and cloud solutions
-- Project technology stacks and descriptions
-
-### 📄 **Mock Resume**
-- Professional resume available for download
-- Direct access to career highlights and achievements
+The old `/about`, `/skills`, and `/portfolio` routes permanently redirect to their sections.
 
 ## Technology Stack
 
-This website is built using modern web technologies:
-
-- **Frontend:** React 18, Next.js 15+ (App Router)
-- **Styling:** Tailwind CSS with custom glassmorphism effects
-- **UI Components:** Radix UI primitives with custom styling
-- **Icons:** Lucide React
-- **Deployment:** Static site generation with Next.js
-- **TypeScript:** Full type safety throughout the application
-
-## Key Technical Features
-
-- **SEO Optimized** with comprehensive metadata for all pages
-- **Responsive Design** optimized for all device sizes
-- **Performance Optimized** with Next.js Image optimization
-- **Accessibility** features and semantic HTML
-- **Modern UI/UX** with glassmorphism design patterns
+- **Framework:** Next.js 16 (App Router), React 19, TypeScript
+- **Styling:** Tailwind CSS 3 with custom glass and glow utilities
+- **UI:** shadcn/ui primitives (Radix Slot), Lucide icons
+- **SEO:** site-wide metadata, Open Graph, `sitemap.xml`, and `robots.txt`
+- **Analytics:** Vercel Analytics and Umami
 
 ## Getting Started
 
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn package manager
+Requires Node.js 20.9+.
 
-If you want to fork this repository to create your own personalized portfolio site, feel free to do so.
-### Installation
-
-1. Clone the repository:
 ```bash
 git clone https://github.com/CodingAbdullah/abdullah_95.git
 cd abdullah_95
-```
-
-2. Install dependencies:
-```bash
 npm install
-```
-
-3. Run the development server:
-```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000). Other scripts: `npm run build`, `npm start`, `npm run lint`.
 
-### Build for Production
+Optional environment variables: `UMAMI_URL` and `UMAMI_WEBSITE_ID` for Umami analytics.
 
-```bash
-npm run build
-npm start
-```
+## Editing Content
+
+All content lives in `src/utils/constants/`:
+
+- `Profile.ts`: name, role, location, summary, links, education
+- `SkillsList.ts`: skill groups and certifications
+- `PortfolioProjectList.ts`: projects (newest first)
 
 ## Project Structure
 
 ```
 src/
-├── app/                   # Next.js App Router pages
-│   ├── about/             # About page
-│   ├── skills/            # Skills showcase
-│   └── portfolio/         # Portfolio projects
-├── components/            # Reusable React components
-│   ├── ui/                # UI component library
-└── utils/                 # Utilities and constants
-    ├── constants/         # Data constants
-    └── types/             # TypeScript type definitions
+├── app/                   # Layout, single page, sitemap, robots, 404/error pages
+├── components/
+│   ├── sections/          # Hero, About, Skills, Projects, Education
+│   └── ui/                # Button and Card primitives
+├── lib/                   # Utilities
+└── utils/
+    ├── constants/         # Site content
+    └── types/             # TypeScript types
 ```
 
 ## Links
@@ -109,7 +64,3 @@ src/
 - **Website:** [kingabdullah.codes](https://kingabdullah.codes)
 - **GitHub:** [CodingAbdullah](https://github.com/CodingAbdullah)
 - **Medium:** [@abdullah_95](https://medium.com/@abdullah_95)
-
----
-
-Built with ❤️ using Next.js and React.

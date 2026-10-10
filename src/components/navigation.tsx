@@ -1,117 +1,62 @@
 "use client"
 
-import * as React from "react"
+import { useState } from "react"
 import Link from "next/link"
-import { cn, navigationMenuTriggerStyle } from "@/lib/utils"
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList
-} from "../components/ui/navigation-menu"
-import { Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react"
+import { RESUME_URL, SECTIONS } from "@/utils/constants/Profile"
 
-// Custom Navigation component
+// Sticky navigation with in-page section anchors
 export default function Navigation() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const closeMobileMenu = () => setIsMobileMenuOpen(false)
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  }
-
-  const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false);
-  }
+  const linkClass = "rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-primary/10 transition-colors"
 
   return (
-    <div className="glass-nav sticky top-0 z-50">
-      <div className="container mx-auto px-4">
-        {/* Mobile Layout */}
-        <div className="md:hidden flex h-16 items-center justify-between">
-          <button
-            onClick={toggleMobileMenu}
-            className="p-2 text-primary hover:bg-primary/10 rounded-md"
-            aria-label="Toggle mobile menu"
-          >
-            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
-          <span className="text-lg font-semibold text-primary">Abdullah</span>
-        </div>
+    <header className="glass-nav sticky top-0 z-50">
+      <nav className="container mx-auto px-4 max-w-5xl flex h-16 items-center justify-between" aria-label="Main">
+        <Link href="/" className="font-semibold text-primary" onClick={closeMobileMenu}>
+          ~/abdullah
+        </Link>
 
-        {/* Desktop Layout */}
-        <div className="hidden md:flex h-16 items-center">
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link href="/" className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
-                    Home
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link href="/about" className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
-                    About
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link href="/skills" className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
-                    Skills
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link href="/portfolio" className={cn(navigationMenuTriggerStyle(), "text-primary font-medium")}>
-                    Portfolio
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
-        </div>
-      </div>
+        {/* Desktop links */}
+        <ul className="hidden md:flex items-center gap-1">
+          {SECTIONS.map((section) => (
+            <li key={section.id}>
+              <Link href={`/#${section.id}`} className={linkClass}>{section.label}</Link>
+            </li>
+          ))}
+          <li>
+            <Link href={RESUME_URL} target="_blank" rel="noopener noreferrer" className={linkClass}>Resume</Link>
+          </li>
+        </ul>
 
-      {/* Mobile Navigation Menu */}
+        {/* Mobile toggle */}
+        <button
+          type="button"
+          onClick={() => setIsMobileMenuOpen((open) => !open)}
+          className="md:hidden p-2 text-primary hover:bg-primary/10 rounded-md"
+          aria-label="Toggle navigation menu"
+          aria-expanded={isMobileMenuOpen}
+          aria-controls="mobile-menu"
+        >
+          {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
+      </nav>
+
+      {/* Mobile links */}
       {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-primary/20 glass-card">
-          <nav className="container mx-auto px-4 py-4">
-            <div className="flex flex-col space-y-2">
-              <Link 
-                href="/" 
-                className="p-3 text-primary font-medium hover:bg-primary/10 rounded-md transition-colors"
-                onClick={closeMobileMenu}
-              >
-                Home
-              </Link>
-              <Link 
-                href="/about" 
-                className="p-3 text-primary font-medium hover:bg-primary/10 rounded-md transition-colors"
-                onClick={closeMobileMenu}
-              >
-                About
-              </Link>
-              <Link 
-                href="/skills" 
-                className="p-3 text-primary font-medium hover:bg-primary/10 rounded-md transition-colors"
-                onClick={closeMobileMenu}
-              >
-                Skills
-              </Link>
-              <Link 
-                href="/portfolio" 
-                className="p-3 text-primary font-medium hover:bg-primary/10 rounded-md transition-colors"
-                onClick={closeMobileMenu}
-              >
-                Portfolio
-              </Link>
-            </div>
-          </nav>
-        </div>
+        <ul id="mobile-menu" className="md:hidden container mx-auto px-4 pb-4 flex flex-col gap-1 border-t border-primary/20 pt-2">
+          {SECTIONS.map((section) => (
+            <li key={section.id}>
+              <Link href={`/#${section.id}`} className={`block ${linkClass}`} onClick={closeMobileMenu}>{section.label}</Link>
+            </li>
+          ))}
+          <li>
+            <Link href={RESUME_URL} target="_blank" rel="noopener noreferrer" className={`block ${linkClass}`} onClick={closeMobileMenu}>Resume</Link>
+          </li>
+        </ul>
       )}
-    </div>
+    </header>
   )
 }
