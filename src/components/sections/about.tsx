@@ -12,7 +12,7 @@ export default function About() {
 
   return (
     <Section id="about" title="About">
-      <div className="space-y-4 text-muted-foreground max-w-3xl">
+      <div className="space-y-4 text-lg leading-relaxed text-muted-foreground max-w-3xl">
         <p>
           I build and deploy full-stack applications and the infrastructure behind them: AWS and Azure, Docker,
           Jenkins pipelines, and Terraform, with a focus on automation, reliability, and performance.
@@ -28,9 +28,9 @@ export default function About() {
       </div>
       <dl className="mt-8 grid grid-cols-3 gap-4 max-w-3xl">
         {stats.map((stat) => (
-          <div key={stat.label} className="glass-card rounded-lg p-4 flex flex-col-reverse text-center sm:text-left">
-            <dt className="text-xs sm:text-sm text-muted-foreground">{stat.label}</dt>
-            <dd className="text-2xl sm:text-3xl font-bold text-primary">{stat.value}</dd>
+          <div key={stat.label} className="glass-card rounded-lg p-3 sm:p-4 flex flex-col-reverse justify-end text-center sm:text-left">
+            <dt className="text-xs sm:text-sm leading-snug text-muted-foreground">{stat.label}</dt>
+            <dd className="font-mono text-2xl sm:text-3xl font-bold text-primary">{stat.value}</dd>
           </div>
         ))}
       </dl>

@@ -16,7 +16,7 @@ const socialLinks = [
 // Custom Footer component with social links
 export default function Footer() {
   return (
-    <footer className="bg-background/80 backdrop-blur-sm border-t border-primary/20">
+    <footer className="bg-background/80 backdrop-blur-sm border-t border-primary/20 font-mono">
       <div className="container mx-auto px-4 max-w-5xl py-6">
         <div className="flex flex-col items-center justify-between gap-3 md:flex-row">
           <ul className="flex gap-4">

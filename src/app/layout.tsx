@@ -1,5 +1,5 @@
 import { Analytics } from "@vercel/analytics/next"
-import { JetBrains_Mono } from 'next/font/google'
+import { Geist, JetBrains_Mono } from 'next/font/google'
 import type { Metadata } from "next"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
@@ -7,7 +7,9 @@ import Script from "next/script"
 import { NAME, PHOTO_URL, ROLE, SITE_URL, SUMMARY } from "@/utils/constants/Profile"
 import "./globals.css"
 
-const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"] })
+// Geist for body text, JetBrains Mono for headings, labels, and other terminal-style accents
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
+const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 const title = `${NAME} - ${ROLE}`
 
@@ -45,8 +47,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={jetBrainsMono.className}>
+    <html lang="en" className={`scroll-smooth ${geist.variable} ${jetBrainsMono.variable}`}>
+      <body className="font-sans antialiased">
         <Navigation />
         <main>{children}</main>
         <Footer />

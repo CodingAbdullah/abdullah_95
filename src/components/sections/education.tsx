@@ -12,10 +12,10 @@ export default function Education() {
             <GraduationCap className="mt-1 h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
             <div>
               <h3 className="text-lg font-semibold text-foreground">{EDUCATION.school}</h3>
-              <p className="text-primary">{EDUCATION.degree}</p>
+              <p className="font-mono text-sm text-primary">{EDUCATION.degree}</p>
             </div>
           </div>
-          <p className="text-sm text-muted-foreground sm:text-right">
+          <p className="font-mono text-sm text-muted-foreground sm:text-right">
             {EDUCATION.years}
             <br />
             {EDUCATION.location}

@@ -4,7 +4,7 @@ import { SECTIONS } from "@/utils/constants/Profile"
 // Sticky navigation with in-page section anchors
 export default function Navigation() {
   return (
-    <header className="glass-nav sticky top-0 z-50">
+    <header className="glass-nav sticky top-0 z-50 font-mono">
       <nav className="container mx-auto px-4 max-w-5xl flex h-14 items-center justify-center sm:justify-between" aria-label="Main">
         <Link href="/" className="hidden sm:block font-semibold text-primary">
           ~/abdullah

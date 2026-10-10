@@ -12,15 +12,15 @@ export default function Projects() {
         {projects.map((project) => (
           <article key={project.title} className="glass-card rounded-lg p-6 flex flex-col gap-4 transition-transform duration-300 hover:-translate-y-1">
             <h3 className="text-lg font-semibold text-primary">{project.title}</h3>
-            <p className="text-sm text-muted-foreground flex-grow">{project.description}</p>
+            <p className="leading-relaxed text-muted-foreground flex-grow">{project.description}</p>
             <ul className="flex flex-wrap gap-2">
               {project.tech.map((tech) => (
-                <li key={tech} className="px-2 py-1 text-xs bg-primary/10 text-primary rounded-md border border-primary/20">
+                <li key={tech} className="px-2 py-1 font-mono text-xs bg-primary/10 text-primary rounded-md border border-primary/20">
                   {tech}
                 </li>
               ))}
             </ul>
-            <div className="flex flex-wrap gap-4 pt-1 text-sm">
+            <div className="flex flex-wrap gap-4 pt-1 font-mono text-sm">
               {project.demo && (
                 <Link href={project.demo} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-foreground hover:text-primary">
                   <Globe className="h-4 w-4" aria-hidden="true" />
