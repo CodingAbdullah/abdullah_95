@@ -1,37 +1,31 @@
 import PortfolioType from "../types/PortfolioType";
 
-// Export a list of portfolio projects
+// Portfolio projects, listed newest/most important first
 export const projects: PortfolioType[] = [
     {
       title: "Ethereum Dashboard",
-      description: "Get a comprehensive view of your Ethereum Assets and Transactions. Monitor market trends, gas prices, and your asset activity in real-time.",
+      description: "Real-time view of Ethereum wallets and markets: ENS lookups, prices, gas, transactions, and ERC-20/721 contract lookups, with dashboards for Polygon, Arbitrum, and Optimism. Data from Alchemy, CoinGecko, Etherscan, and Moralis.",
       tech: ["Next.js", "React.js", "Ethereum", "Crypto API", "AI SDK"],
       github: "https://github.com/CodingAbdullah/Ethereum-Wallet-Dashboard",
-      demo: "https://ethereumdashboard.dev",
-      featured: true
+      demo: "https://ethereumdashboard.dev"
     },
     {
       title: "Software Developer Blog",
-      description: "Comprehensive software developer blog that provides developers with detailed insights on the latest in the software development world.",
-      tech: ["Next.js", "React.js", "MDX", "AI SDK", "Crypto"],
-      github: "#",
-      demo: "https://softwareblog.dev",
-      featured: true
+      description: "Developer blog covering the latest in software engineering, authored in MDX with AI-assisted features.",
+      tech: ["Next.js", "React.js", "MDX", "AI SDK"],
+      demo: "https://softwareblog.dev"
     },
     {
       title: "Medium Article Scraper",
-      description: "Extract valuable content from non-paywall Medium articles effortlessly. Prepare text documents, audio files, and LLM-ready data using this free article scraper.",
-      tech: ["AWS S3", "Next.js", "React.js", "Open AI TTS API", "Firecrawl API"],
-      github: "#",
-      demo: "https://mediumdotcomscraper.pro",
-      featured: false
+      description: "Extracts content from non-paywalled Medium articles into text, audio, and LLM-ready data, using Firecrawl for extraction and text-to-speech for audio output.",
+      tech: ["Next.js", "React.js", "AWS S3", "Firecrawl API", "OpenAI TTS API"],
+      demo: "https://mediumdotcomscraper.pro"
     },
     {
       title: "Next.js MDX Blog Starter Kit",
-      description: "Starter kit that can be used to create, edit, store, and publish blog posts using MDX, JSX components, Next.js, Supabase, and much more.",
-      tech: ["Next.js", "React.js", "MDX", "Supabase", "NPM"],
+      description: "Published npm starter kit for creating, editing, storing, and publishing MDX blog posts with JSX components, backed by Supabase.",
+      tech: ["Next.js", "React.js", "MDX", "Supabase", "npm"],
       github: "https://github.com/CodingAbdullah/Next-MDX-Blog-Starter",
-      demo: "https://www.npmjs.com/package/create-next-mdx-blog-app",
-      featured: false
+      demo: "https://www.npmjs.com/package/create-next-mdx-blog-app"
     }
 ];

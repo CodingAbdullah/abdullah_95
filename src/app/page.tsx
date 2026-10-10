@@ -1,98 +1,52 @@
-import { Button } from "../components/ui/button"
-import { FileText, Github } from 'lucide-react'
-import Image from "next/image"
-import Link from "next/link"
-import { Metadata } from "next"
-import { TypewriterEffect } from "../components/typewriter-effect"
+import Hero from "@/components/sections/hero"
+import About from "@/components/sections/about"
+import Skills from "@/components/sections/skills"
+import Projects from "@/components/sections/projects"
+import Education from "@/components/sections/education"
+import { EDUCATION, LINKS, NAME, PHOTO_URL, ROLE, SITE_URL, SUMMARY } from "@/utils/constants/Profile"
+import { Certifications } from "@/utils/constants/SkillsList"
 
-export const metadata: Metadata = {
-  title: "Abdullah Muhammad - Software Engineer Portfolio",
-  description: "Personal portfolio of Abdullah Muhammad, a passionate Software Engineer. Explore my projects, skills, and professional journey in web development.",
-  keywords: ["Abdullah Muhammad", "Software Engineer", "Portfolio", "Web Developer", "React", "Next.js", "Full Stack Developer"],
-  authors: [{ name: "Abdullah Muhammad" }],
-  openGraph: {
-    title: "Abdullah Muhammad - Software Engineer Portfolio",
-    description: "Personal portfolio of Abdullah Muhammad, a passionate Software Engineer. Explore my projects, skills, and professional journey in web development.",
-    type: "website",
-    locale: "en_US",
+// Schema.org Person data so search engines can identify the site's owner and profiles
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: NAME,
+  jobTitle: ROLE,
+  description: SUMMARY,
+  url: SITE_URL,
+  image: PHOTO_URL,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Toronto",
+    addressRegion: "ON",
+    addressCountry: "CA"
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Abdullah Muhammad - Software Engineer Portfolio",
-    description: "Personal portfolio of Abdullah Muhammad, a passionate Software Engineer. Explore my projects, skills, and professional journey in web development.",
-  }
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: EDUCATION.school
+  },
+  hasCredential: Certifications.map((cert) => ({
+    "@type": "EducationalOccupationalCredential",
+    name: cert.name,
+    ...(cert.url && { url: cert.url })
+  })),
+  knowsAbout: ["AWS", "Azure", "Terraform", "Docker", "Jenkins", "CI/CD", "n8n", "TypeScript", "Rust", "Next.js", "React", "Node.js", "Selenium", "Ethereum"],
+  sameAs: [LINKS.github, LINKS.linkedin, LINKS.medium, LINKS.blog, LINKS.x]
 }
 
-// Home component with styling included
-// Libraries for reusable icons, cards used
-export default async function Home() {
+// Single-page portfolio: every section lives on the home route
+export default function Home() {
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center">
-      <div className="container mx-auto px-4 py-16">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid gap-12 lg:grid-cols-[1fr,400px] items-center">
-            {/* Text Content */}
-            <div className="space-y-8 text-center lg:text-left order-2 lg:order-1">
-              <div className="space-y-4">
-                <h1 className="text-4xl font-bold tracking-tighter text-primary text-glow sm:text-5xl lg:text-6xl xl:text-7xl">
-                  <TypewriterEffect
-                    text="Abdullah Muhammad"
-                    speed={100}
-                    delay={500}
-                  />
-                </h1>
-                <h2 className="text-2xl font-bold tracking-tighter text-primary text-glow sm:text-3xl lg:text-4xl">
-                  Full-Stack Engineer
-                </h2>
-                <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
-                  Specializing in DevOps, cloud-native development, and modern web applications. Building scalable systems with AWS, Docker, Next.js, and blockchain technologies.
-                </p>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 glass-button" asChild>
-                  <Link href="https://genericbucket95.s3.us-east-2.amazonaws.com/Website+Resume.pdf">
-                    <FileText className="mr-2 h-5 w-5" />
-                    View Resume
-                  </Link>
-                </Button>
-                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground glass-button" asChild>
-                  <Link target="_blank" rel="noopener noreferrer" href="https://github.com/CodingAbdullah">
-                    <Github className="mr-2 h-5 w-5" />
-                    GitHub
-                  </Link>
-                </Button>
-              </div>
-
-              {/* Tech Highlights */}
-              <div className="flex flex-wrap gap-2 justify-center lg:justify-start pt-4">
-                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary border border-primary/20">AWS</span>
-                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary border border-primary/20">Docker</span>
-                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary border border-primary/20">Jenkins</span>
-                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary border border-primary/20">Next.js</span>
-                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary border border-primary/20">React</span>
-                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary border border-primary/20">Supabase</span>
-                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary border border-primary/20">Terraform</span>
-                <span className="px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary border border-primary/20">TypeScript</span>
-              </div>
-            </div>
-
-            {/* Profile Picture */}
-            <div className="flex justify-center order-1 lg:order-2">
-              <div className="relative aspect-square w-72 sm:w-80 lg:w-full max-w-[400px] rounded-full overflow-hidden border-8 border-primary/30 shadow-2xl matrix-glow pulse-glow">
-                <Image
-                  src="https://genericbucket95.s3.us-east-2.amazonaws.com/me.jpg"
-                  alt="Abdullah Muhammad - Full-Stack Engineer"
-                  className="object-cover"
-                  sizes="(max-width: 640px) 288px, (max-width: 1024px) 320px, 400px"
-                  priority
-                  fill
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd).replace(/</g, "\\u003c") }}
+      />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Education />
+    </>
   )
 }

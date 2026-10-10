@@ -3,7 +3,6 @@ export default interface PortfolioType {
     title: string,
     description: string,
     tech: string[],
-    github: string,
-    demo: string,
-    featured: boolean
+    github?: string,
+    demo?: string
 }
