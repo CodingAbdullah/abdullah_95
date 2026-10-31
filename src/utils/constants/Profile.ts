@@ -18,8 +18,7 @@ export const LINKS = {
     linkedin: "https://www.linkedin.com/in/softwaredeveloperabdullah",
     medium: "https://medium.com/@abdullah_95",
     blog: "https://softwareblog.dev",
-    instagram: "https://www.instagram.com/kingabdul_95",
-    x: "https://twitter.com/KA95doteth"
+    instagram: "https://www.instagram.com/kingabdul_95"
 };
 
 export const EDUCATION = {

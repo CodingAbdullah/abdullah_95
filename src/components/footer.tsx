@@ -1,5 +1,4 @@
 import { Newspaper, Github, Instagram, Linkedin, BookOpen, Mail } from 'lucide-react'
-import { FaXTwitter } from 'react-icons/fa6'
 import Link from 'next/link'
 import { LINKS, NAME } from '@/utils/constants/Profile'
 
@@ -9,7 +8,6 @@ const socialLinks = [
   { href: LINKS.email, label: "Email", Icon: Mail },
   { href: LINKS.blog, label: "Blog", Icon: BookOpen },
   { href: LINKS.medium, label: "Medium", Icon: Newspaper },
-  { href: LINKS.x, label: "X", Icon: FaXTwitter },
   { href: LINKS.instagram, label: "Instagram", Icon: Instagram }
 ]
 

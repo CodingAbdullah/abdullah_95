@@ -31,7 +31,7 @@ const personJsonLd = {
     ...(cert.url && { url: cert.url })
   })),
   knowsAbout: ["AWS", "Azure", "Terraform", "Docker", "Jenkins", "CI/CD", "n8n", "TypeScript", "Rust", "Next.js", "React", "Node.js", "Selenium", "Ethereum"],
-  sameAs: [LINKS.github, LINKS.linkedin, LINKS.medium, LINKS.blog, LINKS.x]
+  sameAs: [LINKS.github, LINKS.linkedin, LINKS.medium, LINKS.blog]
 }
 
 // Single-page portfolio: every section lives on the home route
