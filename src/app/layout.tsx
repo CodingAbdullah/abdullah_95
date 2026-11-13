@@ -53,8 +53,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`scroll-smooth ${geist.variable} ${jetBrainsMono.variable}`}>
       <body className="font-sans antialiased">
+        {/* Hidden until focused, so keyboard users can jump past the navigation */}
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-3 focus:z-[60] focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:font-mono focus:text-sm focus:font-medium focus:text-primary-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+        >
+          Skip to content
+        </a>
         <Navigation />
-        <main>{children}</main>
+        <main id="main" tabIndex={-1} className="focus:outline-none">{children}</main>
         <Footer />
         <Analytics mode="production" />
         {process.env.UMAMI_URL && process.env.UMAMI_WEBSITE_ID && (

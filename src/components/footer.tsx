@@ -1,6 +1,7 @@
 import { Newspaper, Github, Instagram, Linkedin, BookOpen, Mail } from 'lucide-react'
 import Link from 'next/link'
 import { LINKS, NAME } from '@/utils/constants/Profile'
+import CurrentYear from '@/components/current-year'
 
 const socialLinks = [
   { href: LINKS.github, label: "GitHub", Icon: Github },
@@ -28,7 +29,7 @@ export default function Footer() {
             ))}
           </ul>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} {NAME}
+            © <CurrentYear buildYear={new Date().getFullYear()} /> {NAME}
           </p>
         </div>
       </div>
